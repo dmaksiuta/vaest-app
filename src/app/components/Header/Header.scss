@@ -1,0 +1,32 @@
+.header {
+    // @include flex-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30rem 80rem;
+    // @include tablet {
+    //     padding: 30rem 20rem;
+    // }
+    
+    &__logo {
+        img {
+            max-width: 80rem;
+        } 
+        // @include tablet {
+        //     margin-inline: auto;
+        // }            
+    }
+    &__ul {
+        display: flex;
+        align-items: center;
+        gap: 20rem;
+        a {
+            // @include text ($ff, 14rem, 30rem, 400, $links);
+            font-size: 14rem;
+        }
+        img {
+            max-width: 20rem;
+            transform: translateY(25%);
+        }
+    }    
+}
