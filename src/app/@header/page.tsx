@@ -11,11 +11,11 @@ export default function Header() {
                 <li><a href="/vision">Vision</a></li>
                 <li><a href="/beliggenhed">Beliggenhed</a></li>
                 <li><a href="/bygning">Bygning</a></li>
-                <li><a href="menu.html">Menu</a></li>
+                <li><a href="/menu">Menu</a></li>
                 <li className="header__mere mere" onmouseover="addMere()" onclick="removeMere()"><a href="#">Mere</a>
                     <nav>
                         <ul className="mere__ul" id="mereUl">
-                            <li><a href="folkene.html">Folkene</a></li>
+                            <li><a href="/folkene">Folkene</a></li>
                             <li><a href="help.html">Frivillige, medlemmer og aktionærer </a></li>
                             <li><a href="kontakt.html">Kontakt</a></li>                    						
                         </ul>
@@ -32,7 +32,7 @@ export default function Header() {
                                 <div className="desc accordion__description">
                                     <nav>
                                         <ul>
-                                            <li><a href="folkene.html" className="desc">Folkene</a></li>
+                                            <li><a href="/folkene" className="desc">Folkene</a></li>
                                             <li><a href="help.html" className="desc">Frivillige, medlemmer og aktionærer </a></li>
                                             <li><a href="kontakt.html" className="desc">Kontakt</a></li>                    						
                                         </ul>
