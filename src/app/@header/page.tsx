@@ -9,8 +9,8 @@ export default function Header() {
                 <li><a href="index.html">Start</a></li>
                 <li><a href="/baggrund">Baggrund</a></li>
                 <li><a href="/vision">Vision</a></li>
-                <li><a href="beliggenhed.html">Beliggenhed</a></li>
-                <li><a href="bygning.html">Bygning</a></li>
+                <li><a href="/beliggenhed">Beliggenhed</a></li>
+                <li><a href="/bygning">Bygning</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li className="header__mere mere" onmouseover="addMere()" onclick="removeMere()"><a href="#">Mere</a>
                     <nav>
