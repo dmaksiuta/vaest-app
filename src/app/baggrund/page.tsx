@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Baggrund() {
     return (
@@ -12,7 +13,7 @@ export default function Baggrund() {
                     <p className="desc">Siden 2011 er de utallige gange gået forbi den gamle købmand og tænkt at det da er en utrolig central og lækker placering, "nogen burde gøre noget...".</p>
                     <p className="desc">I marts 2022 købte de så selv den tidligere købmand med deres vision for øje.</p>
                 </div>
-                <a href="#" className="btn baggrund-section__btn">Læs mere om visionen</a>
+                <Link href="/vision" className="btn baggrund-section__btn">Læs mere om visionen</Link>
             </div>                
         </div>
         

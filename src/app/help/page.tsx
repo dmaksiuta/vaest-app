@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Help() {
     return (
         <div className="help-section">
@@ -7,7 +9,7 @@ export default function Help() {
                 <div className="row__card _black">
                     <h4 className="row__title">Som frivillig</h4> 
                     <div className="slogan row__slogan">Hjælp til når det passer dig</div>
-                    <div className="desc row__desc">Følg med på vores Facebook side <span><a href="https://www.facebook.com/vaest.dk" target="_blank">her</a></span>.</div>	                                       
+                    <div className="desc row__desc">Følg med på vores Facebook side <span><Link href="https://www.facebook.com/vaest.dk" target="_blank">her</Link></span>.</div>	                                       
                 </div>
                 <div className="row__card _grey">
                     <h4 className="row__title">Som medlem</h4> 
@@ -22,7 +24,7 @@ export default function Help() {
             </div>
             <div className="help-section__footer footer">
                 <div className="slogan footer__slogan">Ønsker du mere information</div>
-                <a href="#" className="btn help-section__btn">Kontakt os</a>
+                <Link href="/kontakt" className="btn help-section__btn">Kontakt os</Link>
             </div>
         </div>
         

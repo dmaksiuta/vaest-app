@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Beliggenhed() {
     return (
         <div className="beliggenhed-section">                
@@ -5,8 +7,8 @@ export default function Beliggenhed() {
                 <h2 className="beliggenhed-section__title">Beliggenhed</h2>
                 <p className="slogan beliggenhed-section__slogan">Alle stier fører til stranden</p>
                 <p className="desc beliggenhed-section__desc">En af de mange grunde til at Trend sommerhusområdet er elsket af mange, udover stranden naturligvis, er de utallige stisystemer der på kryds og tværs forbinder husene, og det synes at man til stadighed, selv efter et årti, kan finde nye ruter, men én ting er sikkert og vidst, alle stier fører til stranden, og her vil det være på sin plads hvis man kunne belønnes med en forfriskende is eller drink om sommeren samt en kop varm kaffe eller kakao om vinteren til synes af endeløse solnedgange over øerne Fur og Livø.</p>
-                <a className="desc beliggenhed-section__link">Se beliggenheden af Væst på Google Maps</a>
-                <a href="#" className="btn beliggenhed-section__btn">Læs mere om bygningen</a>
+                <Link href="https://goo.gl/maps/QaYyHaKGd5ByHRAC8" target="_blank" className="desc beliggenhed-section__link">Se beliggenheden af Væst på Google Maps</Link>
+                <Link href="/bygning" className="btn beliggenhed-section__btn">Læs mere om bygningen</Link>
             </div>
             {/* <div className="beliggenhed-section__row row">					
                 <div className="row__card">

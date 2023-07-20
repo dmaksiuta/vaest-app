@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Menu() {
     return (
         <>
@@ -9,10 +11,10 @@ export default function Menu() {
                         <p className="desc">Menuen skal laves i tæt samarbejde med den køkkenchef der bliver ansat for én sæson ad gangen.</p>
                         <p className="desc">Der vil dog i hver sæson blive lagt særdeles vægt på konceptet om jordnær ambition, menuen og drikkevarer skal balancere noget enkelt lokalt og genkendeligt med ambitiøs klassisk elegance.</p>
                         <p className="desc">Køkkenchefen, eller parret, vil få ansvaret for al daglig drift igennem månederne juni, juli og august og vil blive aflønnet delvist med en fast løn og delvist med en del af overskuddet fra driften.</p>
-                        <p className="desc">Hvis du mener at du passer på profilen som køkkenchef hos Væst, så kontakt os.</p>
+                        <p className="desc">Hvis du mener at du passer på profilen som køkkenchef hos Væst, så <span><Link href="/kontakt">kontakt</Link></span> os.</p>
                         <p className="desc italic">Menuen nedenfor er blot til inspiration.</p>                         
                     </div> 
-                    <a href="#" className="btn menuDesc-section__btn">Læs mere om Menuen</a>
+                    <Link href="/folkene" className="btn menuDesc-section__btn">Læs mere on folkene bag</Link>
                 </div>                   
             </div>
 

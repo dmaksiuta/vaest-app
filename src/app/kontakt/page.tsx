@@ -1,11 +1,13 @@
+import Link from "next/link";
+
 export default function Kontakt() {
     return (
         <div className="kontakt-section">
             {/* <img src="img/kontakt.jpg" alt="making photos of sea sunset"> */}
             <div className="kontakt-section__info">
                 <h3 className="kontakt-section__title">Kontakt</h3>                    
-                <div className="desc kontakt-section__desc">Vi anbefaler at du følger med på vores Facebook side <span><a href="https://www.facebook.com/vaest.dk" target="_blank">her</a></span> for at få den seneste information om projektet.</div>
-                <div className="desc kontakt-section__desc">Du kan også kontakte <span><a href="folkene.html">folkene</a></span> bag direkte for mere specifikke henvendelser.</div>
+                <div className="desc kontakt-section__desc">Vi anbefaler at du følger med på vores Facebook side <span><Link href="https://www.facebook.com/vaest.dk" target="_blank">her</Link></span> for at få den seneste information om projektet.</div>
+                <div className="desc kontakt-section__desc">Du kan også kontakte <span><Link href="/folkene">folkene</Link></span> bag direkte for mere specifikke henvendelser.</div>
                 <form action="get" className="kontakt-section__form">
                     <div className="kontakt-section__row">
                         <label className="field desc">
@@ -20,7 +22,7 @@ export default function Kontakt() {
                     </div>                   
                     <label className="field desc">
                         <span className="field__title">Email *</span>
-                        <input type="email" className="field__input" placeholder="Din email f.eks. peter@gmail.com" tabindex="2"/>
+                        <input type="email" className="field__input" placeholder="Din email f.eks. peter@gmail.com"/>
                     </label>
                     <label className="field desc">
                         <span className="field__title">Besked *</span>

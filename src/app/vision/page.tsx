@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Vision() {
     return (
         <div className="vision-section">
@@ -13,7 +15,7 @@ export default function Vision() {
                     <p className="desc">Et sted hvor man taler med områdets beboere om løst og fast til synet af altid omskiftelige solnedgange.</p>
                     <p className="desc">Et sted der er tydeligt ambitiøst og gerne vil blive til et navn, hvis ikke i landen så i regionen, men også gerne være afslappet og jordnær på en og samme tid.</p>
                 </div>
-                <a href="#" className="btn vision-section__btn">Se beliggenhed</a>
+                <Link href="/beliggenhed" className="btn vision-section__btn">Se beliggenhed</Link>
             </div>                
         </div>
         

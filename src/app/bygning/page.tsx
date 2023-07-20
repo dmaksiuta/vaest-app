@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Bygning() {
     return (
         <div className="bygning-section">                
@@ -18,7 +20,7 @@ export default function Bygning() {
                     <p className="desc">Afdelingen kan bruges til overnattende gæster efter et privat arrangement, samt som “cognac stue” efter et besøg i restauranten eller et special arrangement.</p>
                     <p className="desc">Under altanen/terrassen mod nord vest skal være et lille cafe/ishus serveringsvindue som eventuelt er sænket lidt med nogle trin eller eventuelt kapper vi noget af terrassen. Det er for at servicere ikke restaurantgæster i sæsonen.</p> 
                 </div> 
-                <a href="#" className="btn bygning-section__btn">Læs mere om Menuen</a>
+                <Link href="/menu" className="btn bygning-section__btn">Læs mere om Menuen</Link>
             </div>
             {/* <img src="img/main-bg-1.jpg" alt="restaurant building">                */}
         </div>
