@@ -16,8 +16,8 @@ export default function Header() {
                     <nav>
                         <ul className="mere__ul" id="mereUl">
                             <li><a href="/folkene">Folkene</a></li>
-                            <li><a href="help.html">Frivillige, medlemmer og aktionærer </a></li>
-                            <li><a href="kontakt.html">Kontakt</a></li>                    						
+                            <li><a href="/help">Frivillige, medlemmer og aktionærer </a></li>
+                            <li><a href="/kontakt">Kontakt</a></li>                    						
                         </ul>
                     </nav>
                 </li>
@@ -33,8 +33,8 @@ export default function Header() {
                                     <nav>
                                         <ul>
                                             <li><a href="/folkene" className="desc">Folkene</a></li>
-                                            <li><a href="help.html" className="desc">Frivillige, medlemmer og aktionærer </a></li>
-                                            <li><a href="kontakt.html" className="desc">Kontakt</a></li>                    						
+                                            <li><a href="/help" className="desc">Frivillige, medlemmer og aktionærer </a></li>
+                                            <li><a href="/kontakt" className="desc">Kontakt</a></li>                    						
                                         </ul>
                                     </nav>
                             </div>
