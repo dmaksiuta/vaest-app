@@ -7,8 +7,8 @@ export default function Header() {
         <nav className="header__nav">
             <ul className="header__ul" id="headerUl">
                 <li><a href="index.html">Start</a></li>
-                <li><a href="baggrund.html">Baggrund</a></li>
-                <li><a href="vision.html">Vision</a></li>
+                <li><a href="/baggrund">Baggrund</a></li>
+                <li><a href="/vision">Vision</a></li>
                 <li><a href="beliggenhed.html">Beliggenhed</a></li>
                 <li><a href="bygning.html">Bygning</a></li>
                 <li><a href="menu.html">Menu</a></li>
