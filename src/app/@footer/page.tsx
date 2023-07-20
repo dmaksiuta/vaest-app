@@ -1,16 +1,19 @@
+import Link from "next/link";
+
+
 export default function Footer() {
     return (
         <footer className="footer">
-			<a href="#" className="footer__logo">Væst</a>
+			<Link href="/" className="footer__logo">Væst</Link>
 			<nav>
 				<ul className="footer__contacts">
-					<li><a href="mailto:hej@væst.dk">hej@væst.dk</a></li>
-					<li><a href="#">+357 97628675</a></li>
-					<li><a href="https://goo.gl/maps/NnCWwAjnHrsVoRGb9" target="_blank">Gl. Amtsvej 39, Trend, 9670 Løgstør</a>		
+					<li><Link href="mailto:hej@væst.dk">hej@væst.dk</Link></li>
+					<li><Link href="#">+357 97628675</Link></li>
+					<li><Link href="https://goo.gl/maps/NnCWwAjnHrsVoRGb9" target="_blank">Gl. Amtsvej 39, Trend, 9670 Løgstør</Link>		
                     </li>
-					<li><a href="https://www.facebook.com/vaest.dk" target="_blank">
+					<li><Link href="https://www.facebook.com/vaest.dk" target="_blank">
                         {/* <img src="img/icons/Facebook.webp" alt="facebook"> */}
-                        </a>
+                        </Link>
                     </li>					
 				</ul>
 			</nav>

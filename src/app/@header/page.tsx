@@ -1,23 +1,28 @@
+import Link from "next/link";
+
+
 export default function Header() {
     return (
         <div className="header">
-        <a href="index.html" className="header__logo">
+        <Link href="/" className="header__logo">
             {/* <img src="img/icons/logo.webp" alt="logo"> */}
-        </a>
+        </Link>
+        
+
         <nav className="header__nav">
             <ul className="header__ul" id="headerUl">
-                <li><a href="index.html">Start</a></li>
-                <li><a href="/baggrund">Baggrund</a></li>
-                <li><a href="/vision">Vision</a></li>
-                <li><a href="/beliggenhed">Beliggenhed</a></li>
-                <li><a href="/bygning">Bygning</a></li>
-                <li><a href="/menu">Menu</a></li>
+                <li><a href="/">Start</a></li>
+                <li><Link href="/baggrund">Baggrund</Link></li>
+                <li><Link href="/vision">Vision</Link></li>
+                <li><Link href="/beliggenhed">Beliggenhed</Link></li>
+                <li><Link href="/bygning">Bygning</Link></li>
+                <li><Link href="/menu">Menu</Link></li>
                 <li className="header__mere mere" onmouseover="addMere()" onclick="removeMere()"><a href="#">Mere</a>
                     <nav>
                         <ul className="mere__ul" id="mereUl">
-                            <li><a href="/folkene">Folkene</a></li>
-                            <li><a href="/help">Frivillige, medlemmer og aktionærer </a></li>
-                            <li><a href="/kontakt">Kontakt</a></li>                    						
+                            <li><Link href="/folkene">Folkene</Link></li>
+                            <li><Link href="/help">Frivillige, medlemmer og aktionærer </Link></li>
+                            <li><Link href="/kontakt">Kontakt</Link></li>                    						
                         </ul>
                     </nav>
                 </li>
@@ -32,9 +37,9 @@ export default function Header() {
                                 <div className="desc accordion__description">
                                     <nav>
                                         <ul>
-                                            <li><a href="/folkene" className="desc">Folkene</a></li>
-                                            <li><a href="/help" className="desc">Frivillige, medlemmer og aktionærer </a></li>
-                                            <li><a href="/kontakt" className="desc">Kontakt</a></li>                    						
+                                            <li><Link href="/folkene" className="desc">Folkene</Link></li>
+                                            <li><Link href="/help" className="desc">Frivillige, medlemmer og aktionærer </Link></li>
+                                            <li><Link href="/kontakt" className="desc">Kontakt</Link></li>                    						
                                         </ul>
                                     </nav>
                             </div>
@@ -43,9 +48,9 @@ export default function Header() {
                         </div>
                     </div>
                 </li>	
-                <li><a href="https://www.facebook.com/vaest.dk" target="_blank">
+                <li><Link href="https://www.facebook.com/vaest.dk" target="_blank">
                     {/* <img src="img/icons/Facebook.webp" alt="facebook"> */}
-                </a>
+                </Link>
                 </li>
             </ul>
         </nav>
