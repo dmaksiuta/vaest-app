@@ -26,6 +26,43 @@
         @include tablet {        
             margin-bottom: 28rem;
         }
-    }    
+    } 
+    .picture__content {           
+        width: 100%;
+        height: 100%; 
+        background: rgba(255, 255, 255, 0.6);
+        transition: $transition;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -5;
+    }
+    .picture__icons {
+        position: absolute;    
+        z-index: 55;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 60rem; 
+        img {
+            max-width: 27rem;
+            cursor: pointer;
+        }
+    }
+    &__picture {
+        cursor: pointer;
+        transition: $transition;
+        position: relative;
+        z-index: 1; 
+        &:hover {
+            .picture__content {
+                z-index: 10;
+                opacity: 1;
+            }
+        }
+         
+    }   
 }
 

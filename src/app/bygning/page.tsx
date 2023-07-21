@@ -23,7 +23,16 @@ export default function Bygning() {
                 </div> 
                 <Link href="/menu" className="btn bygning-section__btn">Læs mere om Menuen</Link>
             </div>
-            <img src="main-bg-1.jpg" alt="restaurant building"/>               
+            <div className="bygning-section__picture picture">                
+                <img src="main-bg-1.jpg" alt="restaurant building"/> 
+                <div className="picture__content">
+                    <div className="picture__icons">
+                    <img src="icons/like-black.svg" alt="like icon"/>
+                    {/* <img src="icons/arrow.svg" alt="share icon" /> */}
+                    </div>                    
+                </div>                                         
+            </div>
+                           
         </div>
         
     )
