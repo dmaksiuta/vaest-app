@@ -1,0 +1,31 @@
+@import '../scss/style.scss';
+
+.bygning-section {
+    padding: 55rem 0 120rem;
+    @include tablet {        
+        padding: 0 0 45rem 0;
+    }
+    img {
+        max-height: 600px;        
+    }
+    &__slogan {
+        margin-top: 0;
+    }
+    &__info {
+        margin-inline: auto;
+        max-width: 780rem;
+        padding-bottom: 120rem;
+        @include tablet {        
+            padding: 0 15rem;
+        }
+    }    
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        gap: 28rem;
+        @include tablet {        
+            margin-bottom: 28rem;
+        }
+    }    
+}
+

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import '../beliggenhed/beliggenhed.scss'
 
 export default function Beliggenhed() {
     return (
