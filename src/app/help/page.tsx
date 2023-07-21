@@ -1,4 +1,5 @@
 import Link from "next/link";
+import '../help/help.scss'
 
 export default function Help() {
     return (

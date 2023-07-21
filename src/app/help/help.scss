@@ -1,0 +1,86 @@
+@import '../scss/style.scss';
+
+.help-section {
+    padding: 63rem 80rem 60rem;
+    @include tablet {
+        padding: 22rem 0 0 0 ;
+    }
+    text-align: center;
+    &__slogan {
+        margin-top: 32rem;
+        margin-bottom: 110rem;
+        @include tablet {            
+            margin-bottom: 22rem;
+        } 
+        
+    }
+    &__footer {
+        padding: 120rem 0;
+        background: $footer-grey;
+    }
+    &__btn {
+        margin-top: 55rem;
+        @include tablet {
+            margin-top: 0;
+        }
+    }
+    .footer__slogan {
+        @include text ($ff-add, 20rem, 27rem, 400, $primary);
+        margin: 0;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 40rem;
+        margin-bottom: 120rem;
+        @include tablet {
+            grid-template-columns: 1fr;
+            margin-bottom: 0;
+        }         
+        &__card {
+            height: 340rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60rem 13.5rem;
+            @include tablet {                
+                height: auto;
+            } 
+            a {
+                @include text ($ff, 15rem, 30rem, 400, $white);
+                text-decoration: underline;
+                @include mobile {
+                    font-size: 14rem;        
+                } 
+            }
+            
+            &._black {
+                background: $primary;                
+            }        
+            &._grey {
+                background: $blue-grey;
+            }        
+            &._blue {
+                background: $light-blue;
+            }
+            &._black, &._grey {
+                color: $white;
+                .row__title, .row__desc, .row__slogan{
+                    color: $white;
+                }
+            }
+        }
+        &__title {
+            @include text ($ff-titles, 22rem, 23rem, 400, $primary);
+            @include tablet {
+                font-size: 20px;
+            } 
+        }
+        &__slogan {
+            margin: 47rem 0 34rem;
+            max-width: 274rem; 
+                     
+        }
+    }
+}
