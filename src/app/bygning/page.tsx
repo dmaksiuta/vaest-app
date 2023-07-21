@@ -23,7 +23,7 @@ export default function Bygning() {
                 </div> 
                 <Link href="/menu" className="btn bygning-section__btn">Læs mere om Menuen</Link>
             </div>
-            {/* <img src="img/main-bg-1.jpg" alt="restaurant building">                */}
+            <img src="main-bg-1.jpg" alt="restaurant building"/>               
         </div>
         
     )

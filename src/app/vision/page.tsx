@@ -5,7 +5,7 @@ export default function Vision() {
     return (
         <div className="vision-section">
             <div className="vision-section__img">
-                {/* <img src="img/vision.jpg" alt="sea sunset"> */}
+                <img src="vision.jpg" alt="sea sunset"/>
             </div>                
             <div className="vision-section__info">
                 <h3 className="vision-section__title">Vision</h3>

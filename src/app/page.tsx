@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className="main-section">
-          {/* <img src="img/main-bg-1.jpg" alt="restaurant building"> */}
+          <img src="main-bg-1.jpg" alt="restaurant building"/>
           <div className="main-section__info">
               <h3 className="main-section__title">Velkommen til projekt Væst ved Trend strand</h3>
               <p className="desc main-section__desc"><span>Væst</span> navnet er inspireret af Vesthimmerland, solnedgangen mod vest samt det nye danske køkken.</p>

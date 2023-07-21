@@ -9,14 +9,20 @@
     }
     .row {        
         @include flex-between;
-        background: $add-grey;
-        
+        background: $add-grey;        
         img {
             max-width: 50%;
             height: 540rem;
+            @media screen and (min-width: 1400px){
+                object-fit: contain;                
+            }
             @include tablet {
                 max-width: 100%;
                 height: 240rem;
+                object-fit: contain;
+            }            
+            @include mobile {                
+                object-fit: cover;
             }
         }
         &:nth-child(even) img {

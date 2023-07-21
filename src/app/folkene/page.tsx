@@ -6,7 +6,7 @@ export default function Folkene() {
             <h3 className="folkene-section__title">Folkene bag</h3>
             <p className="slogan folkene-section__slogan">Et lokalt hold af kompetente kræfter bag Væst projektet</p>
             <div className="folkene-section__row row">
-                {/* <img src="img/folkene/Folkene-1.webp" alt="Kasper Kau photo"> */}
+                <img src="folkene/Folkene-1.webp" alt="Kasper Kau photo"/>
                 <div className="row__info">
                     <h4 className="row__title">Kasper Kau</h4>
                     <div className="slogan row__slogan">Stifter</div>
@@ -16,7 +16,7 @@ export default function Folkene() {
             </div>
 
             <div className="folkene-section__row row">
-                {/* <img src="img/folkene/Folkene-2.webp" alt="Trine Kau photo"> */}
+                <img src="folkene/Folkene-2.webp" alt="Trine Kau photo"/>
                 <div className="row__info">
                     <h4 className="row__title">Trine Kau</h4>
                     <div className="slogan row__slogan">Stifter</div>
@@ -26,7 +26,7 @@ export default function Folkene() {
             </div>
 
             <div className="folkene-section__row row">
-                {/* <img src="img/folkene/Folkene-3.png" alt="Mogens Kjær photo"> */}
+                <img src="folkene/Folkene-3.png" alt="Mogens Kjær photo"/>
                 <div className="row__info">
                     <h4 className="row__title">Mogens Kjær</h4>
                     <div className="slogan row__slogan">Advokat</div>
@@ -36,7 +36,7 @@ export default function Folkene() {
             </div>
 
             <div className="folkene-section__row row">
-                {/* <img src="img/folkene/henrik_1327.jpeg" alt="Henrik Pedersen photo"> */}
+                <img src="folkene/henrik_1327.jpeg" alt="Henrik Pedersen photo"/>
                 <div className="row__info">
                     <h4 className="row__title">Henrik Pedersen</h4>
                     <div className="slogan row__slogan">Byggerådgiver og arkitekt</div>
@@ -46,7 +46,7 @@ export default function Folkene() {
             </div>
 
             <div className="folkene-section__row row">
-                {/* <img src="img/folkene/Folkene-5.webp" alt="Ole Hosbond Poulsen photo"> */}
+                <img src="folkene/Folkene-5.webp" alt="Ole Hosbond Poulsen photo"/>
                 <div className="row__info">
                     <h4 className="row__title">Ole Hosbond Poulsen</h4>
                     <div className="slogan row__slogan">Revisor</div>
@@ -56,7 +56,7 @@ export default function Folkene() {
             </div>
 
             <div className="folkene-section__row row">
-                {/* <img src="img/folkene/Folkene-6.png" alt="Asger Larsen photo"> */}
+                <img src="folkene/Folkene-6.png" alt="Asger Larsen photo"/>
                 <div className="row__info">
                     <h4 className="row__title">Asger Larsen</h4>
                     <div className="slogan row__slogan">Ejendomsmægler</div>

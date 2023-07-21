@@ -4,7 +4,7 @@ import '../kontakt/kontakt.scss'
 export default function Kontakt() {
     return (
         <div className="kontakt-section">
-            {/* <img src="img/kontakt.jpg" alt="making photos of sea sunset"> */}
+            <img src="kontakt.jpg" alt="making photos of sea sunset"/>
             <div className="kontakt-section__info">
                 <h3 className="kontakt-section__title">Kontakt</h3>                    
                 <div className="desc kontakt-section__desc">Vi anbefaler at du følger med på vores Facebook side <span><Link href="https://www.facebook.com/vaest.dk" target="_blank">her</Link></span> for at få den seneste information om projektet.</div>
