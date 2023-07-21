@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from './page.module.scss';
+import '../app/scss/main-section.scss'
 
 
 export default function Home() {
