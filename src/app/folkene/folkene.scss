@@ -1,0 +1,55 @@
+@import '../scss/style.scss';
+
+
+.folkene-section {
+    padding-top: 60rem;
+    text-align: center;    
+    &__slogan {
+        margin: 32rem 0 150rem 0;
+    }
+    .row {        
+        @include flex-between;
+        background: $add-grey;
+        
+        img {
+            max-width: 50%;
+            height: 540rem;
+            @include tablet {
+                max-width: 100%;
+                height: 240rem;
+            }
+        }
+        &:nth-child(even) img {
+            order: 2;
+                    
+        }
+        &__info {            
+            flex-grow: 1;
+            @include tablet {
+                padding: 45px 15px;
+            }            
+        }    
+        &__title {
+            @include text ($ff, 22rem, 22.6rem, 700, $primary);            
+        }    
+        &__slogan {
+            margin-top: 47rem;
+        }    
+        &__desc {
+            max-width: 460rem;
+            margin-inline: auto;
+            &:not(:last-child) {
+                margin-bottom: 28rem;
+            }
+        }
+        @include tablet {
+            flex-direction: column;
+            &:nth-child(even) img {
+                order: 1;                        
+            }
+            &:nth-child(even) .row__info {
+                order: 2;                        
+            }
+        }
+    }
+}

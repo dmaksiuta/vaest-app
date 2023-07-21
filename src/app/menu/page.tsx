@@ -1,4 +1,5 @@
 import Link from "next/link";
+import '../menu/menu.scss'
 
 export default function Menu() {
     return (

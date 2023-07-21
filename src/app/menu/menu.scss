@@ -1,0 +1,86 @@
+@import '../scss/style.scss';
+
+.menuDesc-section {      
+    padding: 62rem 0 140rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 460rem));
+    justify-content: center;
+    gap: 10rem;
+    @include tablet {        
+        grid-template-columns: 1fr;
+        padding: 22rem 15rem;
+    }
+    &__slogan {
+        margin-top: 0;
+    }
+
+    &__info {
+        max-width: 460rem;
+    }
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        gap: 28rem;
+    }
+}
+
+
+.menu-section {
+    padding: 55rem 0 120rem;
+    text-align: center;
+    &__title {        
+        line-height: 60rem;
+        padding-top: 12rem;
+    }
+
+    &__item {
+        margin-bottom: 120rem;
+    }
+    &__slogan {
+        margin: 17rem 0 70rem;
+    }
+}
+
+.item {
+
+    &__title {
+        text-align: center;
+        display: inline-block;
+        @include text ($ff, 28rem, 24rem, 700, $links); 
+        padding-bottom: 20rem;
+        border-bottom: 2rem solid $links;
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 232rem));
+        column-gap: 80rem;
+        row-gap: 50rem;
+        justify-content: center;
+        @include tablet {
+            grid-template-columns: minmax(auto, 232rem);
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__desc {
+        padding: 25rem 0 18rem;
+        &::after {
+            content: '';
+            display: block;
+            height: 2rem;
+            width: 192rem;
+            background-color: $primary;
+            position: relative;
+            left: 50%;
+            top: 18rem;
+            transform: translateX(-50%);
+        }
+    }
+    .slogan {
+        margin: 0;
+    }
+}

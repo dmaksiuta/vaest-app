@@ -1,3 +1,5 @@
+import '../folkene/folkene.scss'
+
 export default function Folkene() {
     return (
         <div className="folkene-section">
