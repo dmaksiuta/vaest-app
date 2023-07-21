@@ -1,4 +1,5 @@
 import Link from "next/link";
+import '../baggrund/baggrund.scss'
 
 export default function Baggrund() {
     return (

@@ -1,0 +1,30 @@
+@import '../scss/style.scss';
+
+.baggrund-section {
+    padding-bottom: 120rem;
+    @include tablet {
+        padding-bottom: 0;
+    }
+    img {
+        max-height: 560px;
+        margin-bottom: 58rem;
+        @include tablet {
+            margin-bottom: 45rem;
+            height: 240rem;
+        }
+    }
+    &__info {
+        margin-inline: auto;
+        max-width: 780rem;
+        text-align: center;
+        @include tablet {
+            padding: 0 15rem;
+        }
+    }    
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        gap: 28rem;
+    }    
+}
+

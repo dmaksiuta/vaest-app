@@ -1,4 +1,5 @@
 import Link from "next/link";
+import '../vision/vision.scss'
 
 export default function Vision() {
     return (
