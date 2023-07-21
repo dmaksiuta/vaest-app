@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import '../@footer/footer.scss';
 
 export default function Footer() {
     return (
@@ -12,7 +12,7 @@ export default function Footer() {
 					<li><Link href="https://goo.gl/maps/NnCWwAjnHrsVoRGb9" target="_blank">Gl. Amtsvej 39, Trend, 9670 Løgstør</Link>		
                     </li>
 					<li><Link href="https://www.facebook.com/vaest.dk" target="_blank">
-                        {/* <img src="img/icons/Facebook.webp" alt="facebook"> */}
+                        <img src="icons/Facebook.webp" alt="facebook"/>
                         </Link>
                     </li>					
 				</ul>

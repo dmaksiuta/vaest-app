@@ -1,0 +1,38 @@
+@import '../scss/style.scss';
+
+.footer {
+    background: $footer-grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40rem 0 31rem;
+    &__logo {
+        @include text ($ff-titles, 22rem, 23rem, 400, $primary);
+        margin-bottom: 34rem;
+        @include mobile {
+            font-size: 20rem;            
+        } 
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8rem;
+        margin-bottom: 33rem;
+        a {
+            @include text ($ff, 15rem, 20rem, 400, $primary);            
+        }
+        img {
+            max-width: 20rem;
+        }
+        li {
+           &:last-child {
+            margin-top: 20px;
+           }
+        }        
+    }
+    &__copyright {
+        @include text ($ff, 14rem, 30rem, 400, $primary); 
+    }
+}

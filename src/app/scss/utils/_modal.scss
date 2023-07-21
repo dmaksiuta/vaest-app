@@ -1,0 +1,88 @@
+.pop-up {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);    
+    transition: .3s all ease-in-out;   
+    opacity: 0;
+	overflow: hidden;
+	z-index: -50;    
+    &__container {
+        display: flex;
+		align-items: center;
+		justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    &__body {
+        background: $white;
+        text-align: center;
+        padding: 80rem 130rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        justify-content: center; 
+        gap: 25rem;     
+		@include mobile {
+			padding: 30rem 50rem;
+		}
+    }
+    &__socials {
+        @include flex-between;        
+        gap: 40rem;
+        img {
+            max-width: 24rem;
+        }
+        @include tablet-small {
+            gap: 20rem;
+        }
+    }
+    &__input {
+        display: flex;
+        max-width: 300rem;
+        input {
+            padding: 2rem 8rem;
+            background: $input;            
+            @include text ($ff, 14rem, 28.6rem, 400, $primary);
+            border: 1rem solid $black;
+            width: 260rem;
+            @include tablet-small {
+                width: 200rem;
+                
+            }
+            
+        }
+        button {
+            padding: 12rem 16rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $black;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            transition: $transition;
+            img {
+                width: 18rem;
+            }
+            &:hover {
+                opacity: 0.6;
+             }
+
+        }
+    }
+    &__close {
+        font-size: 20px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+}
+.pop-up.active {
+    opacity: 1;
+    z-index: 50;
+}

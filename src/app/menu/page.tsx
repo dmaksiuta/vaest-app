@@ -22,67 +22,67 @@ export default function Menu() {
             <div className="menu-section">
                 <h3 className="menu-section__title"> Sommer ☀️</h3>
                 <p className="slogan menu-section__slogan">Juni, juli og august menu.</p>
-                {/* <div className="item menu-section__item">
+                <div className="item menu-section__item">
                     <h4 className="item__title">Forretter</h4>
                     <div className="item__row">
                         <div className="item__card">
-                            <img src="img/menu/foretter-1.jpg" alt="salad">
+                            <img src="menu/foretter-1.jpg" alt="salad"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="img/menu/foretter-2.jpg" alt="first course">
+                            <img src="menu/foretter-2.jpg" alt="first course"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="img/menu/foretter-3.jpg" alt="salad">
+                            <img src="menu/foretter-3.jpg" alt="salad"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="img/menu/foretter-4.jpg" alt="first course">
+                            <img src="menu/foretter-4.jpg" alt="first course"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="img/menu//foretter-5.jpg" alt="dish">
+                            <img src="menu/foretter-5.jpg" alt="dish"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                     </div>                    
-                </div> */}
+                </div>
 
-                {/* <div className="item menu-section__item">
+                <div className="item menu-section__item">
                     <h4 className="item__title">Hovedret</h4>
                     <div className="item__row">
                         <div className="item__card">
-                            <img src="img/menu/Hovedret-1.jpg" alt="fish">
+                            <img src="menu/Hovedret-1.jpg" alt="fish"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="img/menu/Hovedret-2.jpg" alt="second course">
+                            <img src="menu/Hovedret-2.jpg" alt="second course"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="img/menu/foretter-3.jpg" alt="fish">
+                            <img src="menu/foretter-3.jpg" alt="fish"/>
                             <div className="sloganitem__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="img/menu/Hovedret-4.jpg" alt="spaghetti">
+                            <img src="menu/Hovedret-4.jpg" alt="spaghetti"/>
                             <div className="slogan item__desc">Væst</div>                
                         </div>
                         <div className="item__card">
-                            <img src="img/menu/Hovedret-5.jpg" alt="salad">
+                            <img src="menu/Hovedret-5.jpg" alt="salad"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                     </div>                    
-                </div> */}
+                </div>
 
-                {/* <div className="item menu-section__item">
+                <div className="item menu-section__item">
                     <h4 className="item__title">Dessert</h4>
                     <div className="item__row">
                         <div className="item__card">
-                            <img src="img/menu/dessert.jpg" alt="dessert">
+                            <img src="menu/dessert.jpg" alt="dessert"/>
                             <div className="desc item__desc">Væst</div>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
         </>
         

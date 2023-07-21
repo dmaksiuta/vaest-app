@@ -1,0 +1,21 @@
+.header__mere {    
+    position: relative;
+    transition: $transition;
+    @include tablet {
+        display: none;
+    }    
+}
+
+.mere__ul {
+    position: absolute;
+    right: 0;
+    top: 40rem;
+    min-width: 230px;
+    text-align: right;    
+    flex-direction: column;
+    gap: 12rem;
+    display: none;    
+}
+.mere__ul.active {
+    display: flex;
+}

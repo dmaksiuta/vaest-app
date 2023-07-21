@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <div className="header">
         <Link href="/" className="header__logo">
-            {/* <img src="img/icons/logo.webp" alt="logo"> */}
+            <img src="icons/logo.webp" alt="logo"/>
         </Link>
         
 
@@ -49,7 +49,7 @@ export default function Header() {
                     </div>
                 </li>	
                 <li><Link href="https://www.facebook.com/vaest.dk" target="_blank">
-                    {/* <img src="img/icons/Facebook.webp" alt="facebook"> */}
+                    <img src="icons/Facebook.webp" alt="facebook"/>
                 </Link>
                 </li>
             </ul>

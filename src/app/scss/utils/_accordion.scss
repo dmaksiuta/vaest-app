@@ -1,0 +1,36 @@
+.header__accordion {
+	transform: translateY(-100%);
+	position: fixed;
+	@include tablet {
+        position: static;
+		transform: translateY(0);
+        
+    }
+}
+.accordion {
+    display: none;
+    text-align: center;	
+    @include tablet {
+        display: block;
+        
+    }
+    .material-icons {
+        transition: $transition;        
+    }
+	&__header {
+		display: inline-flex;
+		align-items: center;
+        justify-content: center;        	
+		cursor: pointer;
+	}
+	&-open {
+		.material-icons {
+			transform: rotate(180deg);
+		}
+	}
+	&__content {
+		overflow: hidden;
+		height: 0;
+		transition: all .25s ease;		
+	}
+}

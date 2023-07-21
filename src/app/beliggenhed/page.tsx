@@ -11,22 +11,22 @@ export default function Beliggenhed() {
                 <Link href="https://goo.gl/maps/QaYyHaKGd5ByHRAC8" target="_blank" className="desc beliggenhed-section__link">Se beliggenheden af Væst på Google Maps</Link>
                 <Link href="/bygning" className="btn beliggenhed-section__btn">Læs mere om bygningen</Link>
             </div>
-            {/* <div className="beliggenhed-section__row row">					
+            <div className="beliggenhed-section__row row">					
                 <div className="row__card">
-                    <img src="img/beliggenhed/map-1.webp" alt="map"> 
+                    <img src="beliggenhed/map-1.webp" alt="map"/> 
                     <div className="row__content">
                         <div className="row__icons">
-                            <img src="img/icons/like.svg" alt="like">
-                            <img src="img/icons/arrow.svg" alt="share" onclick="popup(this)">
+                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
                         </div>                    
                     </div>                                           
                 </div>
             <div className="row__card">                
-                <img src="img/beliggenhed//shore-1.webp" alt="seashore">
+                <img src="beliggenhed/shore-1.webp" alt="seashore"/>
                 <div className="row__content">
                     <div className="row__icons">
-                        <img src="img/icons/like.svg" alt="like">
-                        <img src="img/icons/arrow.svg" alt="share" onclick="popup(this)">
+                        <img src="icons/like.svg" alt="like"/>
+                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
                     </div>                    
                 </div> 
                                                            
@@ -35,45 +35,44 @@ export default function Beliggenhed() {
                 <p>Bjørnholms Bugt</p>
                 <div className="row__content">
                     <div className="row__icons">
-                        <img src="img/icons/like.svg" alt="like">
-                        <img src="img/icons/arrow.svg" alt="share" onclick="popup(this)">
+                        <img src="icons/like.svg" alt="like"/>
+                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
                     </div>                    
                 </div> 
                                                         
             </div>
             <div className="row__card">                
-                <img src="img/beliggenhed/sunset_1.webp" alt="sea sunset"> 
+                <img src="beliggenhed/sunset_1.webp" alt="sea sunset"/> 
                 <div className="row__content">
                     <div className="row__icons">
-                        <img src="img/icons/like.svg" alt="like">
-                        <img src="img/icons/arrow.svg" alt="share" onclick="popup(this)">
+                        <img src="icons/like.svg" alt="like"/>
+                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
                     </div>                    
                 </div> 
                                                         
             </div>
             <div className="row__card"> 
                 <div className="video__play">
-                    <img src="img/icons/play.svg" alt="play button">
-
+                    <img src="icons/play.svg" alt="play button"/>
                 </div>  
-                <!-- <div className="video-container">
+                {/* <div className="video-container">
                     <video src="img/IMG_1968.mp4" preload="metadata" loop id="myVideo"></video>                    
-                </div>  -->
-                <img src="img/beliggenhed/video-poster.png" alt="seashore">
+                </div>  */}
+                <img src="beliggenhed/video-poster.png" alt="seashore"/>
                 
                 <div className="row__content">
                     <div className="row__icons">
-                        <img src="img/icons/like.svg" alt="like">
-                        <img src="img/icons/arrow.svg" alt="share" onclick="popup(this)">
+                        <img src="icons/like.svg" alt="like"/>
+                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
                     </div>                    
                 </div>                                                           
             </div>
             <div className="row__card">                
-                <img src="img/beliggenhed/map-2.webp" alt="map">  
+                <img src="beliggenhed/map-2.webp" alt="map"/>  
                 <div className="row__content">
                     <div className="row__icons">
-                        <img src="img/icons/like.svg" alt="like">
-                        <img src="img/icons/arrow.svg" alt="share" onclick="popup(this)">
+                        <img src="icons/like.svg" alt="like"/>
+                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
                     </div>                    
                 </div>                                         
             </div>
@@ -81,24 +80,22 @@ export default function Beliggenhed() {
                 <p>God Parkering</p>
                 <div className="row__content">
                     <div className="row__icons">
-                        <img src="img/icons/like.svg" alt="like">
-                        <img src="img/icons/arrow.svg" alt="share" onclick="popup(this)">
+                        <img src="icons/like.svg" alt="like"/>
+                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
                     </div>                    
                 </div>                                       
             </div>
             <div className="row__card">                
-                <img src="img/beliggenhed/shore-2_1.webp" alt="seashore"> 
+                <img src="beliggenhed/shore-2_1.webp" alt="seashore"/> 
                 <div className="row__content">
                     <div className="row__icons">
-                        <img src="img/icons/like.svg" alt="like">
-                        <img src="img/icons/arrow.svg" alt="share" onclick="popup(this)">
+                        <img src="icons/like.svg" alt="like"/>
+                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
                     </div>                    
                 </div>                                           
             </div>
-        </div>  */}
-        </div>                 
-        
-    
+            </div> 
+        </div>
         
     )
 
