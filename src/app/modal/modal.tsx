@@ -1,5 +1,5 @@
-
-import '../scss/utils/_modal.scss'
+import { mdiClose } from '@mdi/js';
+import '../scss/utils/_modal.scss';
 
 export default function Modal() {
     return (
@@ -20,7 +20,14 @@ export default function Modal() {
                     </button>
                 </div>
                 
-                <div className="pop-up__close" id="closePopUp">&#10006</div>
+                <div className="pop-up__close" id="closePopUp"><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                            >
+                                <path d={mdiClose} />
+                            </svg></div>
             </div>
         </div>
     </div>
