@@ -4,6 +4,17 @@ import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import '../bygning/bygning.scss'
 import Modal from "../modal/modal";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+
+
+
 
 export default function Bygning() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -56,18 +67,57 @@ export default function Bygning() {
                 </div> 
                 <Link href="/menu" className="btn bygning-section__btn">Læs mere om Menuen</Link>
             </div>
-            <div className="bygning-section__picture picture">                
-                <img src="main-bg-1.jpg" alt="restaurant building"/> 
-                <div className='picture__small'>
-                    <img src="no57_logo.png" className='picture__small' alt="number 57" />
-                </div>                
-                <div className="picture__content">
-                    <div className="picture__icons">
-                    <img src="icons/like-black.svg" alt="like icon"/>
-                    <img src="icons/arrow-black.svg" alt="share icon" onClick={openModal}/>
-                    </div>                    
-                </div>                                         
-            </div>
+            <div className="bygning-section__carousel">
+                <Swiper
+                    modules={[Navigation, Pagination, Scrollbar]}
+                    spaceBetween={20}
+                    slidesPerView={1.2}
+                    navigation
+                    pagination={{ clickable: true }}
+                    scrollbar={{ draggable: true }}      
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                >
+                    <SwiperSlide>
+                        <div className="bygning-section__picture picture">                
+                            <img src="main-bg-1.jpg" alt="restaurant building"/> 
+                            <div className='picture__small'>
+                                <img src="no57_logo.png" className='picture__small' alt="number 57" />
+                            </div>                
+                            <div className="picture__content">
+                                <div className="picture__icons">
+                                <img src="icons/like-black.svg" alt="like icon"/>
+                                <img src="icons/arrow-black.svg" alt="share icon" onClick={openModal}/>
+                                </div>                    
+                            </div>                                         
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="bygning-section__picture picture">                
+                            <img src="main-bg-2.jpg" alt="restaurant building"/>                                           
+                            <div className="picture__content">
+                                <div className="picture__icons">
+                                <img src="icons/like-black.svg" alt="like icon"/>
+                                <img src="icons/arrow-black.svg" alt="share icon" onClick={openModal}/>
+                                </div>                    
+                            </div>                                         
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="bygning-section__picture picture">                
+                            <img src="main-bg-3.jpg" alt="restaurant building"/>                                           
+                            <div className="picture__content">
+                                <div className="picture__icons">
+                                <img src="icons/like-black.svg" alt="like icon"/>
+                                <img src="icons/arrow-black.svg" alt="share icon" onClick={openModal}/>
+                                </div>                    
+                            </div>                                         
+                        </div>
+                    </SwiperSlide>
+                
+                </Swiper>
+                </div>
+            
             <Modal closeModal={closeModal} modalOpen={modalOpen} />               
         </div>
         

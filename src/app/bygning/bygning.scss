@@ -1,7 +1,7 @@
 @import '../scss/style.scss';
 
 .bygning-section {
-    padding: 55rem 0 120rem;
+    padding: 55rem 80rem 120rem;
     @include tablet {        
         padding: 0 0 45rem 0;
     }
@@ -74,6 +74,13 @@
             }
         }
          
-    }   
+    } 
+    .swiper-pagination-bullet {
+        display: none;        
+    } 
+    .swiper-button-prev, .swiper-button-next  {
+        color: $blue-grey;
+       
+    }  
 }
 
