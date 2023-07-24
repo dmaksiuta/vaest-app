@@ -1,9 +1,18 @@
+'use client'
+
+import React, { useState } from 'react';
 import Link from "next/link";
 import '../beliggenhed/beliggenhed.scss'
 import Modal from "../modal/modal";
 
 
-export default function Beliggenhed() {
+export default function Beliggenhed() {    
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => {
+        setModalOpen(true);
+    };        
+
     return (
         <div className="beliggenhed-section">                
             <div className="beliggenhed-section__info">
@@ -19,85 +28,85 @@ export default function Beliggenhed() {
                     <div className="row__content">
                         <div className="row__icons">
                             <img src="icons/like.svg" alt="like"/>
-                            <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
+                            <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
                         </div>                    
                     </div>                                           
                 </div>
-            <div className="row__card">                
-                <img src="beliggenhed/shore-1.webp" alt="seashore"/>
-                <div className="row__content">
-                    <div className="row__icons">
-                        <img src="icons/like.svg" alt="like"/>
-                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
-                    </div>                    
-                </div> 
-                                                           
+                <div className="row__card">                
+                    <img src="beliggenhed/shore-1.webp" alt="seashore"/>
+                    <div className="row__content">
+                        <div className="row__icons">
+                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
+                        </div>                    
+                    </div> 
+                                                            
+                </div>
+                <div className="row__card _yellow">                
+                    <p>Bjørnholms Bugt</p>
+                    <div className="row__content">
+                        <div className="row__icons">
+                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
+                        </div>                    
+                    </div> 
+                                                            
+                </div>
+                <div className="row__card">                
+                    <img src="beliggenhed/sunset_1.webp" alt="sea sunset"/> 
+                    <div className="row__content">
+                        <div className="row__icons">
+                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
+                        </div>                    
+                    </div> 
+                                                            
+                </div>
+                <div className="row__card"> 
+                    <div className="video__play">
+                        <img src="icons/play.svg" alt="play button"/>
+                    </div>  
+                    {/* <div className="video-container">
+                        <video src="img/IMG_1968.mp4" preload="metadata" loop id="myVideo"></video>                    
+                    </div>  */}
+                    <img src="beliggenhed/video-poster.png" alt="seashore"/>
+                    
+                    <div className="row__content">
+                        <div className="row__icons">
+                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
+                        </div>                    
+                    </div>                                                           
+                </div>
+                <div className="row__card">                
+                    <img src="beliggenhed/map-2.webp" alt="map"/>  
+                    <div className="row__content">
+                        <div className="row__icons">
+                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
+                        </div>                    
+                    </div>                                         
+                </div>
+                <div className="row__card _dark">                
+                    <p>God Parkering</p>
+                    <div className="row__content">
+                        <div className="row__icons">
+                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
+                        </div>                    
+                    </div>                                       
+                </div>
+                <div className="row__card">                
+                    <img src="beliggenhed/shore-2_1.webp" alt="seashore"/> 
+                    <div className="row__content">
+                        <div className="row__icons">
+                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
+                        </div>                    
+                    </div>                                           
+                </div>
             </div>
-            <div className="row__card _yellow">                
-                <p>Bjørnholms Bugt</p>
-                <div className="row__content">
-                    <div className="row__icons">
-                        <img src="icons/like.svg" alt="like"/>
-                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
-                    </div>                    
-                </div> 
-                                                        
-            </div>
-            <div className="row__card">                
-                <img src="beliggenhed/sunset_1.webp" alt="sea sunset"/> 
-                <div className="row__content">
-                    <div className="row__icons">
-                        <img src="icons/like.svg" alt="like"/>
-                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
-                    </div>                    
-                </div> 
-                                                        
-            </div>
-            <div className="row__card"> 
-                <div className="video__play">
-                    <img src="icons/play.svg" alt="play button"/>
-                </div>  
-                {/* <div className="video-container">
-                    <video src="img/IMG_1968.mp4" preload="metadata" loop id="myVideo"></video>                    
-                </div>  */}
-                <img src="beliggenhed/video-poster.png" alt="seashore"/>
-                
-                <div className="row__content">
-                    <div className="row__icons">
-                        <img src="icons/like.svg" alt="like"/>
-                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
-                    </div>                    
-                </div>                                                           
-            </div>
-            <div className="row__card">                
-                <img src="beliggenhed/map-2.webp" alt="map"/>  
-                <div className="row__content">
-                    <div className="row__icons">
-                        <img src="icons/like.svg" alt="like"/>
-                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
-                    </div>                    
-                </div>                                         
-            </div>
-            <div className="row__card _dark">                
-                <p>God Parkering</p>
-                <div className="row__content">
-                    <div className="row__icons">
-                        <img src="icons/like.svg" alt="like"/>
-                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
-                    </div>                    
-                </div>                                       
-            </div>
-            <div className="row__card">                
-                <img src="beliggenhed/shore-2_1.webp" alt="seashore"/> 
-                <div className="row__content">
-                    <div className="row__icons">
-                        <img src="icons/like.svg" alt="like"/>
-                        <img src="icons/arrow.svg" alt="share" onclick="popup(this)"/>
-                    </div>                    
-                </div>                                           
-            </div>
-            </div>
-            <Modal /> 
+            <Modal modalOpen={modalOpen} />
         </div>
         
     )
