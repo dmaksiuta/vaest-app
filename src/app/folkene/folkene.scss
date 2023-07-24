@@ -13,7 +13,7 @@
         img {
             max-width: 50%;
             height: 540rem;
-            @media screen and (min-width: 1400px){
+            @media screen and (min-width: 1950px){
                 object-fit: contain;                
             }
             @include tablet {

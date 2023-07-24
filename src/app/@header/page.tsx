@@ -1,7 +1,21 @@
+'use client'
+
 import Link from "next/link";
+import React, { useState } from "react";
 import '../@header/header.scss'
 
 export default function Header() {
+    const [isMereActive, setIsMereActive] = useState(false);
+
+    function addMere() {
+      setIsMereActive(true);
+    }
+  
+    function removeMere() {
+      setIsMereActive(false);
+    }
+
+    
     return (
         <div className="header">
         <Link href="/" className="header__logo">
@@ -17,9 +31,12 @@ export default function Header() {
                 <li><Link href="/beliggenhed">Beliggenhed</Link></li>
                 <li><Link href="/bygning">Bygning</Link></li>
                 <li><Link href="/menu">Menu</Link></li>
-                <li className="header__mere mere" onmouseover="addMere()" onclick="removeMere()"><a href="#">Mere</a>
+                <li className={`header__mere mere ${isMereActive ? "active" : ""}`}
+        onMouseOver={addMere}
+        onClick={removeMere}
+        ><a href="#">Mere</a>
                     <nav>
-                        <ul className="mere__ul" id="mereUl">
+                        <ul className={`mere__ul ${isMereActive ? "active" : ""}`} id="mereUl">
                             <li><Link href="/folkene">Folkene</Link></li>
                             <li><Link href="/help">Frivillige, medlemmer og aktionærer </Link></li>
                             <li><Link href="/kontakt">Kontakt</Link></li>                    						
