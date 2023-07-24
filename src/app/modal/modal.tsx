@@ -5,6 +5,18 @@ import { mdiClose } from '@mdi/js';
 import '../scss/utils/_modal.scss';
 
 export default function Modal({closeModal, modalOpen}) {
+    // Function to copy text
+    function myFunction() {
+        // Get the text field
+        var copyText = document.getElementById("myInput");
+
+        // Select the text field
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value);
+    }
     
     return (
         <div className={`pop-up ${modalOpen ? 'active' : ''}`} id="popUp">
@@ -19,7 +31,7 @@ export default function Modal({closeModal, modalOpen}) {
                 </div>
                 <div className="pop-up__input">
                     <input type="text" value="https://www.xn--vst-yla.dk/beliggenhed?pgid=l6kyjvqg-45f10bbd-0b3b-4b6a-b135-223c6d262fa3" id="myInput" readOnly/>
-                    <button>
+                    <button onClick={myFunction}>
                         <img src="icons/copy.svg" alt="copy link"/>
                     </button>
                 </div>

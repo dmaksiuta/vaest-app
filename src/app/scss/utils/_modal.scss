@@ -53,12 +53,14 @@
             background: $input;            
             @include text ($ff, 14rem, 28.6rem, 400, $primary);
             border: 1rem solid $black;
-            width: 260rem;
-            @include tablet-small {
-                width: 200rem;
-                
+            width: 260rem;            
+            user-select: none; 
+            &:focus {
+                outline: none;                
             }
-            
+            @include tablet-small {
+                width: 200rem;                
+            }            
         }
         button {
             padding: 12rem 16rem;
@@ -75,7 +77,7 @@
             }
             &:hover {
                 opacity: 0.6;
-             }
+            }
 
         }
     }

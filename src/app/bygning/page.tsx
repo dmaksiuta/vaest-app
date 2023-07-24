@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import '../bygning/bygning.scss'
 import Modal from "../modal/modal";
@@ -13,7 +13,27 @@ export default function Bygning() {
     }; 
     const closeModal = () => {
         setModalOpen(false);
-      };       
+      }; 
+
+      
+      useEffect(() => {
+        const htmlElement = document.getElementById("html");
+        const bodyElement = document.getElementById("body");
+
+        if (modalOpen) {
+            htmlElement.classList.add("overflow-hidden");
+            bodyElement.classList.add("overflow-hidden");
+        } else {
+            htmlElement.classList.remove("overflow-hidden");
+            bodyElement.classList.remove("overflow-hidden");
+        }
+
+        // Clean up the effect on component unmount
+        return () => {
+            htmlElement.classList.remove("overflow-hidden");
+            bodyElement.classList.remove("overflow-hidden");
+        };
+    }, [modalOpen]);
 
     return (
         <div className="bygning-section">                
