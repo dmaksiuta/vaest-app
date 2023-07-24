@@ -28,6 +28,21 @@ export default function Header() {
             htmlElement.classList.toggle("overflow-hidden");
             bodyElement.classList.toggle("overflow-hidden");
             burgerBtn.classList.toggle("is-active");
+
+
+            const links = headerUl.querySelectorAll("a");
+        links.forEach(link => {
+            link.addEventListener("click", () => {
+                // Check if headerUl is active before removing "overflow-hidden" class from body and html
+                if (headerUl.classList.contains("active")) {
+                    htmlElement.classList.remove("overflow-hidden");
+                    bodyElement.classList.remove("overflow-hidden");
+                }
+                // Close the headerUl after clicking on a link
+                headerUl.classList.remove("active");
+                burgerBtn.classList.remove("is-active");
+            });
+        });
         }
     }
 
