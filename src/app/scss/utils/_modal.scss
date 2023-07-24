@@ -27,7 +27,10 @@
         flex-direction: column;
         align-items: center;  
         justify-content: center; 
-        gap: 25rem;     
+        gap: 25rem;
+        transform: translateY(30%); 
+        opacity: 0; 
+        transition: .4s all ease-in-out;   
 		@include mobile {
 			padding: 30rem 50rem;
 		}
@@ -87,4 +90,9 @@
 .pop-up.active {
     opacity: 1;
     z-index: 50;
+    .pop-up__body {
+        transform: translateY(0); 
+        opacity: 1; 
+        z-index: 60;
+    }
 }

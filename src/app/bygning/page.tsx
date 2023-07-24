@@ -1,7 +1,20 @@
+'use client'
+
+import React, { useState } from 'react';
 import Link from "next/link";
 import '../bygning/bygning.scss'
+import Modal from "../modal/modal";
 
 export default function Bygning() {
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => {
+        setModalOpen(true);
+    }; 
+    const closeModal = () => {
+        setModalOpen(false);
+      };       
+
     return (
         <div className="bygning-section">                
             <div className="bygning-section__info">
@@ -28,11 +41,11 @@ export default function Bygning() {
                 <div className="picture__content">
                     <div className="picture__icons">
                     <img src="icons/like-black.svg" alt="like icon"/>
-                    <img src="icons/arrow-black.svg" alt="share icon" />
+                    <img src="icons/arrow-black.svg" alt="share icon" onClick={openModal}/>
                     </div>                    
                 </div>                                         
             </div>
-                           
+            <Modal closeModal={closeModal} modalOpen={modalOpen} />               
         </div>
         
     )
