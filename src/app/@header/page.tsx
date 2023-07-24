@@ -20,14 +20,13 @@ export default function Header() {
         const headerUl = document.getElementById("headerUl");
         const htmlElement = document.getElementById("html");
         const bodyElement = document.getElementById("body");
+        const burgerBtn = document.getElementById("hamburger");
       
-        if (headerUl) {
-          headerUl.classList.toggle("active");
-        }
-      
-        if (htmlElement && bodyElement) {
-          htmlElement.classList.toggle("overflow-hidden");
-          bodyElement.classList.toggle("overflow-hidden");
+        if (headerUl && htmlElement && bodyElement && burgerBtn) {
+            headerUl.classList.toggle("active");
+            htmlElement.classList.toggle("overflow-hidden");
+            bodyElement.classList.toggle("overflow-hidden");
+            burgerBtn.classList.toggle("is-active");
         }
       }
 
