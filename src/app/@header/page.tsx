@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import React, { useState, useRef } from "react";
-import '../@header/header.scss'
+import '../@header/header.scss';
+
+import { mdiChevronDown } from '@mdi/js';
 
 export default function Header() {
     const [isMereActive, setIsMereActive] = useState(false);
@@ -63,7 +65,14 @@ export default function Header() {
                         <div className="accordion__item">
                             <div className="accordion__header">
                                 <a href="#">Mere</a>                                    
-                                <span className="material-icons">expand_more</span>                                    
+                                <span><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                            >
+                                <path d={mdiChevronDown} />
+                            </svg></span>                                    
                             </div>
                             <div className="accordion__content">
                                 <div className="desc accordion__description">

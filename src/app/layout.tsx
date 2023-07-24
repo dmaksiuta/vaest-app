@@ -16,11 +16,10 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
-  // header
+  children,  
 }: {
   children: React.ReactNode,
-  // header: React.ReactNode,
+ 
 }) {
   return (
     <html lang="en" id='html'>

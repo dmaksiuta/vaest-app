@@ -22,9 +22,14 @@
 		align-items: center;
         justify-content: center;        	
 		cursor: pointer;
+		gap: 20rem;
+		svg {
+			transform: translateY(10%);
+			
+		}
 	}
 	&-open {
-		.material-icons {
+		.accordion__header span {
 			transform: rotate(180deg);
 		}
 	}

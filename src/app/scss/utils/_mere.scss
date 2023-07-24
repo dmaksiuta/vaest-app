@@ -9,11 +9,14 @@
 .mere__ul {
     position: absolute;
     right: 0;
-    top: 40rem;
+    top: 35rem;
     min-width: 230px;
     text-align: right;    
     flex-direction: column;    
-    display: none;      
+    display: none;
+    a {
+        line-height: 29rem;
+    }      
 }
 .mere__ul.active {
     display: flex;
