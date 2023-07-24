@@ -7,8 +7,7 @@ import '../@header/header.scss';
 import { mdiChevronDown } from '@mdi/js';
 
 export default function Header() {
-    const [isMereActive, setIsMereActive] = useState(false);
-    const headerUlRef = useRef(null);
+    const [isMereActive, setIsMereActive] = useState(false);    
 
     function addMere() {
       setIsMereActive(true);
@@ -30,15 +29,15 @@ export default function Header() {
             bodyElement.classList.toggle("overflow-hidden");
             burgerBtn.classList.toggle("is-active");
         }
-      }
+    }
+
 
     
     return (
         <div className="header">
         <Link href="/" className="header__logo">
             <img src="icons/logo.webp" alt="logo"/>
-        </Link>
-        
+        </Link>       
 
         <nav className="header__nav">
             <ul className="header__ul" id="headerUl">
@@ -49,9 +48,9 @@ export default function Header() {
                 <li><Link href="/bygning">Bygning</Link></li>
                 <li><Link href="/menu">Menu</Link></li>
                 <li className={`header__mere mere ${isMereActive ? "active" : ""}`}
-        onMouseOver={addMere}
-        onClick={removeMere}
-        ><a href="#">Mere</a>
+                    onMouseOver={addMere}
+                    onClick={removeMere}
+                    ><a href="#">Mere</a>
                     <nav>
                         <ul className={`mere__ul ${isMereActive ? "active" : ""}`} id="mereUl">
                             <li><Link href="/folkene">Folkene</Link></li>

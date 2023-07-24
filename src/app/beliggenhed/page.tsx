@@ -1,5 +1,6 @@
 import Link from "next/link";
 import '../beliggenhed/beliggenhed.scss'
+import Modal from "../modal/modal";
 
 export default function Beliggenhed() {
     return (
@@ -94,7 +95,10 @@ export default function Beliggenhed() {
                     </div>                    
                 </div>                                           
             </div>
-            </div> 
+            </div>
+
+
+            <Modal /> 
         </div>
         
     )
