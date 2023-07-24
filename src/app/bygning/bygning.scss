@@ -5,9 +5,9 @@
     @include tablet {        
         padding: 0 0 45rem 0;
     }
-    img {
+    img{
         max-height: 600px;        
-    }
+    }    
     &__slogan {
         margin-top: 0;
     }
@@ -49,6 +49,17 @@
         img {
             max-width: 24rem;
             cursor: pointer;
+        }
+    }
+    .picture__small {
+        position: absolute;
+        bottom: 30rem;
+        right: 30rem;
+        z-index: 2;
+        img {
+            width: 70px;
+            height: 40px;
+            max-width: 70px;
         }
     }
     &__picture {

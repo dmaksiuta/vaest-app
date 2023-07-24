@@ -4,7 +4,7 @@ import '../baggrund/baggrund.scss'
 export default function Baggrund() {
     return (
         <div className="baggrund-section">
-            <img src="baggrund.jpg" alt="people on the seashore"/>
+            <img src="baggrund.webp" alt="people on the seashore"/>
             <div className="baggrund-section__info">
                 <h3 className="baggrund-section__title">Baggrund</h3>
                 <p className="slogan baggrund-section__slogan">"Nogen burde gøre noget..."</p>

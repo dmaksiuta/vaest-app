@@ -58,6 +58,9 @@ export default function Bygning() {
             </div>
             <div className="bygning-section__picture picture">                
                 <img src="main-bg-1.jpg" alt="restaurant building"/> 
+                <div className='picture__small'>
+                    <img src="no57_logo.png" className='picture__small' alt="number 57" />
+                </div>                
                 <div className="picture__content">
                     <div className="picture__icons">
                     <img src="icons/like-black.svg" alt="like icon"/>
