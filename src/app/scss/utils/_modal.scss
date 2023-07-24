@@ -40,6 +40,7 @@
         gap: 40rem;
         img {
             max-width: 24rem;
+            max-height: 24rem;
         }
         @include tablet-small {
             gap: 20rem;
@@ -48,6 +49,7 @@
     &__input {
         display: flex;
         max-width: 300rem;
+        max-height: 40rem;
         input {
             padding: 2rem 8rem;
             background: $input;            
@@ -74,6 +76,7 @@
             transition: $transition;
             img {
                 width: 18rem;
+                height: 18rem;
             }
             &:hover {
                 opacity: 0.6;

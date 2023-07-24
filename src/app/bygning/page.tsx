@@ -71,7 +71,16 @@ export default function Bygning() {
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar]}
                     spaceBetween={20}
-                    slidesPerView={1.2}
+                    breakpoints={{
+                        320: {
+                          slidesPerView: 1,
+                          spaceBetween: 0,
+                        },
+                        576: {
+                          slidesPerView: 1.2,
+                          spaceBetween: 20,
+                        }
+                      }}                    
                     navigation
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}      

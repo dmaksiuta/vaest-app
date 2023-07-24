@@ -5,8 +5,11 @@
     @include tablet {        
         padding: 0 0 45rem 0;
     }
-    img{
-        max-height: 600px;        
+    img {
+        max-height: 600px; 
+        @include tablet {        
+            height: 560rem;
+        }       
     }    
     &__slogan {
         margin-top: 0;
@@ -48,8 +51,12 @@
         gap: 75rem; 
         img {
             max-width: 24rem;
+            max-height: 24rem;
             cursor: pointer;
         }
+        @include tablet {        
+            gap: 20rem; 
+        } 
     }
     .picture__small {
         position: absolute;
