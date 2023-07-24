@@ -23,8 +23,8 @@ export default function RootLayout({
   // header: React.ReactNode,
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" id='html'>
+      <body className={inter.className} id='body'>
         <Header />        
         {children}        
         <Footer />

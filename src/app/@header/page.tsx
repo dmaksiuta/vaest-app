@@ -1,11 +1,12 @@
 'use client'
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import '../@header/header.scss'
 
 export default function Header() {
     const [isMereActive, setIsMereActive] = useState(false);
+    const headerUlRef = useRef(null);
 
     function addMere() {
       setIsMereActive(true);
@@ -14,6 +15,21 @@ export default function Header() {
     function removeMere() {
       setIsMereActive(false);
     }
+
+    function navToggle() {
+        const headerUl = document.getElementById("headerUl");
+        const htmlElement = document.getElementById("html");
+        const bodyElement = document.getElementById("body");
+      
+        if (headerUl) {
+          headerUl.classList.toggle("active");
+        }
+      
+        if (htmlElement && bodyElement) {
+          htmlElement.classList.toggle("overflow-hidden");
+          bodyElement.classList.toggle("overflow-hidden");
+        }
+      }
 
     
     return (
@@ -71,7 +87,7 @@ export default function Header() {
                 </li>
             </ul>
         </nav>
-        <div className="header__burger" id="hamburger" onclick="navToggle()">						
+        <div className="header__burger" id="hamburger" onClick={navToggle}>						
             <span className="line"></span>
             <span className="line"></span>
             <span className="line"></span>			  
