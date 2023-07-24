@@ -28,7 +28,7 @@ export default function Bygning() {
                 <div className="picture__content">
                     <div className="picture__icons">
                     <img src="icons/like-black.svg" alt="like icon"/>
-                    {/* <img src="icons/arrow.svg" alt="share icon" /> */}
+                    <img src="icons/arrow-black.svg" alt="share icon" />
                     </div>                    
                 </div>                                         
             </div>

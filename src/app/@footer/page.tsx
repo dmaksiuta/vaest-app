@@ -1,7 +1,16 @@
+'use client'
+
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import '../@footer/footer.scss';
 
 export default function Footer() {
+    const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+    useEffect(() => {      
+      setCurrentYear(new Date().getFullYear());
+    }, []);
+
     return (
         <footer className="footer">
 			<Link href="/" className="footer__logo">Væst</Link>
@@ -17,8 +26,8 @@ export default function Footer() {
                     </li>					
 				</ul>
 			</nav>
-            <div className="footer__copyright">	Copyright ©					
-                <span id="footer-year"></span>
+            <div className="footer__copyright">	Copyright © 					
+                <span>{currentYear}</span>
                 Væst.
             </div>
 	    </footer>

@@ -33,6 +33,9 @@
         }        
     }
     &__copyright {
-        @include text ($ff, 14rem, 30rem, 400, $primary); 
+        @include text ($ff, 14rem, 30rem, 400, $primary);
+        span {
+            padding: 0 5rem;
+        } 
     }
 }
