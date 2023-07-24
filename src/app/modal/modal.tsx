@@ -24,7 +24,7 @@ export default function Modal({closeModal, modalOpen}) {
                     </button>
                 </div>
                 
-                <div className="pop-up__close" id="closePopUp"  onClick={closeModal}>
+                <div className="pop-up__close" id="closePopUp" onClick={closeModal}>
                     <svg xmlns="http://www.w3.org/2000/svg" 
                         width="24"
                         height="24"

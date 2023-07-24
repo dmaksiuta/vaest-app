@@ -11,7 +11,10 @@ export default function Beliggenhed() {
 
     const openModal = () => {
         setModalOpen(true);
-    };        
+    }; 
+    const closeModal = () => {
+        setModalOpen(false);
+      };       
 
     return (
         <div className="beliggenhed-section">                
@@ -106,7 +109,7 @@ export default function Beliggenhed() {
                     </div>                                           
                 </div>
             </div>
-            <Modal modalOpen={modalOpen} />
+            <Modal closeModal={closeModal} modalOpen={modalOpen} />
         </div>
         
     )
