@@ -39,5 +39,18 @@
     p:not(:last-of-type){
         margin-bottom: 32rem;
         
-    }  
+    } 
+    .swiper-button-prev, .swiper-button-next  {
+        display: none;
+    }     
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;        
+    }
+    .swiper-pagination-bullet-active {
+        background: $white;
+    }
+}
+#html .swiper-pagination {
+    bottom: 40rem;
 }
