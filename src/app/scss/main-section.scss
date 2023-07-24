@@ -7,11 +7,14 @@
         flex-direction: column-reverse;
         padding-bottom: 0;
     }
-    img {
+    &__carousel {
         max-height: 680px;
         margin-bottom: 60rem;
         @include tablet {           
             margin-bottom: 0;
+        }
+        img {
+            max-height: 680px; 
         }
     }
     span {
