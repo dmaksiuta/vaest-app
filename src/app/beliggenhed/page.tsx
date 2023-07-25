@@ -63,7 +63,7 @@ export default function Beliggenhed() {
                     <div className="row__content">
                         <div className="row__icons">
                             <div className="row__svg" onClick={()=>setCounter(counter+1)}>
-                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" onClick={()=>setCounter(counter+1)}/></svg>
+                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={()=>setCounter(counter+1)}/></svg>
                             </div>
                             <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
@@ -75,7 +75,7 @@ export default function Beliggenhed() {
                     <div className="row__content">
                         <div className="row__icons">
                             <div className="row__svg" onClick={()=>setCounter(counter+1)}>
-                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" onClick={()=>setCounter(counter+1)}/></svg>
+                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={()=>setCounter(counter+1)}/></svg>
                             </div>
                             <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
@@ -88,7 +88,7 @@ export default function Beliggenhed() {
                     <div className="row__content">
                         <div className="row__icons">
                             <div className="row__svg" onClick={()=>setCounter(counter+1)}>
-                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" onClick={()=>setCounter(counter+1)}/></svg>
+                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={()=>setCounter(counter+1)}/></svg>
                             </div>
                             <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
@@ -101,7 +101,7 @@ export default function Beliggenhed() {
                     <div className="row__content">
                         <div className="row__icons">
                             <div className="row__svg" onClick={()=>setCounter(counter+1)}>
-                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" onClick={()=>setCounter(counter+1)}/></svg>
+                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={()=>setCounter(counter+1)}/></svg>
                             </div>
                             <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
@@ -121,7 +121,7 @@ export default function Beliggenhed() {
                     <div className="row__content">
                         <div className="row__icons">
                             <div className="row__svg" onClick={()=>setCounter(counter+1)}>
-                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" onClick={()=>setCounter(counter+1)}/></svg>
+                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={()=>setCounter(counter+1)}/></svg>
                             </div>
                             <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
@@ -133,7 +133,7 @@ export default function Beliggenhed() {
                     <div className="row__content">
                         <div className="row__icons">
                             <div className="row__svg" onClick={()=>setCounter(counter+1)}>
-                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" onClick={()=>setCounter(counter+1)}/></svg>
+                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={()=>setCounter(counter+1)}/></svg>
                             </div>
                             <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
@@ -145,7 +145,7 @@ export default function Beliggenhed() {
                     <div className="row__content">
                         <div className="row__icons">
                             <div className="row__svg" onClick={()=>setCounter(counter+1)}>
-                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" onClick={()=>setCounter(counter+1)}/></svg>
+                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={()=>setCounter(counter+1)}/></svg>
                             </div>
                             <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
@@ -157,7 +157,7 @@ export default function Beliggenhed() {
                     <div className="row__content">
                         <div className="row__icons">                            
                             <div className="row__svg" onClick={()=>setCounter(counter+1)}>
-                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" onClick={()=>setCounter(counter+1)}/></svg>
+                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={()=>setCounter(counter+1)}/></svg>
                             </div>                           
                             <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
