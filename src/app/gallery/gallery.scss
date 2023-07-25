@@ -49,6 +49,15 @@
     img {
         max-width: 35rem;
         max-height: 35rem;
+        @include mobile {
+            max-width: 24rem;
+            max-height: 24rem;
+        }
+    }
+}
+&__expand {
+    @include mobile {
+        display: none;
     }
 }
 &__swiper {
