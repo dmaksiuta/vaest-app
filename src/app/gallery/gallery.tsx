@@ -6,9 +6,6 @@ import '../gallery/gallery.scss'
 import Modal from "../modal/modal";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
-import { mdiClose, mdiArrowExpand  } from '@mdi/js';
-
-
 
 
 export default function Gallery({ isActive, deactivateGallery }) {    

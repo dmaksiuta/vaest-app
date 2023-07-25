@@ -1,7 +1,7 @@
 @import '../scss/style.scss';
 
 
-.gallery {
+.gallerySecond {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,6 +10,9 @@
     z-index: 999;
     height: 100vh;
     display: none;
+    img {
+        max-height: 600rem;
+    }
     &__header {
         padding: 30rem 40rem 10rem;
         display: flex;
@@ -58,10 +61,12 @@
         padding: 0;
     }    
 }
-&__picture, &__content {
+&__content {
     max-width: 70%;
     margin-inline: auto;
-    position: relative;
+    height: 600rem;
+    height: 100%;
+    
     @include tablet-small {
         max-width: 100%;
     }     
@@ -70,20 +75,8 @@
     color: $black;
     max-height: 27rem;
 }
-.picture__small {
-    position: absolute;
-    bottom: 20rem;
-    right: 30rem;
-    z-index: 2;
-    img {
-        width: 70px;
-        height: 40px;
-        max-width: 70px;
-    }
 }
-
-}
-.gallery.active {
+.gallerySecond.active {
     display: block;
    
 }

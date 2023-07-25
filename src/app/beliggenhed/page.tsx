@@ -4,13 +4,14 @@ import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import '../beliggenhed/beliggenhed.scss'
 import Modal from "../modal/modal";
-
+import GallerySecond from '../gallerySecond/gallerySecond';
 
 
 
 export default function Beliggenhed() {    
     const [modalOpen, setModalOpen] = useState(false);
     const [counter, setCounter] = useState(0);
+    const [galleryActive, setGalleryActive] = useState(false);
 
     const openModal = () => {
         setModalOpen(true);
@@ -18,7 +19,16 @@ export default function Beliggenhed() {
     const closeModal = () => {
         setModalOpen(false);
       };
-      
+    
+    const toggleGallery = () => {
+        setGalleryActive(!galleryActive);
+    };
+
+    const deactivateGallery = () => {
+        setGalleryActive(false);
+    };
+
+
       useEffect(() => {
         const htmlElement = document.getElementById("html");
         const bodyElement = document.getElementById("body");
@@ -48,7 +58,7 @@ export default function Beliggenhed() {
                 <Link href="/bygning" className="btn beliggenhed-section__btn">Læs mere om bygningen</Link>
             </div>
             <div className="beliggenhed-section__row row">					
-                <div className="row__card">
+                <div className="row__card" onClick={toggleGallery}>
                     <img src="beliggenhed/map-1.webp" alt="map"/> 
                     <div className="row__content">
                         <div className="row__icons">
@@ -60,7 +70,7 @@ export default function Beliggenhed() {
                         </div>                    
                     </div>                                           
                 </div>
-                <div className="row__card">                
+                <div className="row__card" onClick={toggleGallery}>                
                     <img src="beliggenhed/shore-1.webp" alt="seashore"/>
                     <div className="row__content">
                         <div className="row__icons">
@@ -73,7 +83,7 @@ export default function Beliggenhed() {
                     </div> 
                                                             
                 </div>
-                <div className="row__card _yellow">                
+                <div className="row__card _yellow" onClick={toggleGallery}>                
                     <p>Bjørnholms Bugt</p>
                     <div className="row__content">
                         <div className="row__icons">
@@ -86,7 +96,7 @@ export default function Beliggenhed() {
                     </div> 
                                                             
                 </div>
-                <div className="row__card">                
+                <div className="row__card" onClick={toggleGallery}>                
                     <img src="beliggenhed/sunset_1.webp" alt="sea sunset"/> 
                     <div className="row__content">
                         <div className="row__icons">
@@ -99,7 +109,7 @@ export default function Beliggenhed() {
                     </div> 
                                                             
                 </div>
-                <div className="row__card"> 
+                <div className="row__card" onClick={toggleGallery}> 
                     <div className="video__play">
                         <img src="icons/play.svg" alt="play button"/>
                     </div>  
@@ -118,7 +128,7 @@ export default function Beliggenhed() {
                         </div>                    
                     </div>                                                           
                 </div>
-                <div className="row__card">                
+                <div className="row__card" onClick={toggleGallery}>                
                     <img src="beliggenhed/map-2.webp" alt="map"/>  
                     <div className="row__content">
                         <div className="row__icons">
@@ -130,7 +140,7 @@ export default function Beliggenhed() {
                         </div>                    
                     </div>                                         
                 </div>
-                <div className="row__card _dark">                
+                <div className="row__card _dark" onClick={toggleGallery}>                
                     <p>God Parkering</p>
                     <div className="row__content">
                         <div className="row__icons">
@@ -142,7 +152,7 @@ export default function Beliggenhed() {
                         </div>                    
                     </div>                                       
                 </div>
-                <div className="row__card">                
+                <div className="row__card" onClick={toggleGallery}>                
                     <img src="beliggenhed/shore-2_1.webp" alt="seashore"/> 
                     <div className="row__content">
                         <div className="row__icons">                            
@@ -156,6 +166,7 @@ export default function Beliggenhed() {
                 </div>
             </div>
             <Modal closeModal={closeModal} modalOpen={modalOpen} />
+            <GallerySecond isActive={galleryActive} deactivateGallery={deactivateGallery} />
         </div>
         
     )
