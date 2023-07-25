@@ -52,6 +52,15 @@
     img {
         max-width: 35rem;
         max-height: 35rem;
+        @include mobile {
+            max-width: 24rem;
+            max-height: 24rem;
+        }
+    }
+}
+&__expand {
+    @include mobile {
+        display: none;
     }
 }
 &__swiper {
@@ -61,11 +70,21 @@
         padding: 0;
     }    
 }
+.swiper-pagination-bullet {
+    display: none;        
+}
 &__content {
     max-width: 70%;
     margin-inline: auto;
     height: 600rem;
-    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    p {
+        @include text ($ff, 50rem, 56rem, 400, $white);
+        max-width: 284rem;
+        text-align: center;
+    }  
     
     @include tablet-small {
         max-width: 100%;
