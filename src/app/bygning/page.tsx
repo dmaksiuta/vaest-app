@@ -18,6 +18,7 @@ import 'swiper/css/pagination';
 
 export default function Bygning() {
     const [modalOpen, setModalOpen] = useState(false);
+    const [counter, setCounter] = useState(0);
 
     const openModal = () => {
         setModalOpen(true);
@@ -95,8 +96,11 @@ export default function Bygning() {
                             </div>                
                             <div className="picture__content">
                                 <div className="picture__icons">
-                                <img src="icons/like-black.svg" alt="like icon"/>
-                                <img src="icons/arrow-black.svg" alt="share icon" onClick={openModal}/>
+                                    <div className="picture__svg" onClick={()=>setCounter(counter+1)}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" onClick={()=>setCounter(counter+1)}/></svg>
+                                    </div>
+                                    <div className="picture__counter">{counter}</div>
+                                    <img src="icons/arrow-black.svg" alt="share icon" onClick={openModal}/>
                                 </div>                    
                             </div>                                         
                         </div>
@@ -106,7 +110,10 @@ export default function Bygning() {
                             <img src="main-bg-2.jpg" alt="restaurant building"/>                                           
                             <div className="picture__content">
                                 <div className="picture__icons">
-                                <img src="icons/like-black.svg" alt="like icon"/>
+                                    <div className="picture__svg" onClick={()=>setCounter(counter+1)}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" onClick={()=>setCounter(counter+1)}/></svg>
+                                    </div>
+                                    <div className="picture__counter">{counter}</div>
                                 <img src="icons/arrow-black.svg" alt="share icon" onClick={openModal}/>
                                 </div>                    
                             </div>                                         
@@ -117,7 +124,10 @@ export default function Bygning() {
                             <img src="main-bg-3.jpg" alt="restaurant building"/>                                           
                             <div className="picture__content">
                                 <div className="picture__icons">
-                                <img src="icons/like-black.svg" alt="like icon"/>
+                                    <div className="picture__svg" onClick={()=>setCounter(counter+1)}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" onClick={()=>setCounter(counter+1)}/></svg>
+                                    </div>
+                                    <div className="picture__counter">{counter}</div>
                                 <img src="icons/arrow-black.svg" alt="share icon" onClick={openModal}/>
                                 </div>                    
                             </div>                                         

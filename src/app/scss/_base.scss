@@ -59,7 +59,8 @@ h3 {
     } 
 }
 .text-14 {
-    @include text ($ff, 14rem, 24rem, 400, $primary); 
+    @include text ($ff, 14rem, 24rem, 400, $primary);
+    font-family: var('--font-avenir'); 
 }
 .btn {
     display: inline-block;
@@ -80,7 +81,8 @@ h3 {
 .slogan {
     margin-top: 42rem;
     margin-bottom: 30rem;
-    @include text ($ff-add, 18rem, 24rem, 400, $primary);
+    @include text ($ff, 18rem, 24rem, 400, $primary);
+    font-family: var(--font-dancing-script);    
     @include tablet {
         margin: 13rem 0;
              

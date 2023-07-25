@@ -1,13 +1,25 @@
 import './globals.scss';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Dancing_Script } from 'next/font/google';
 import Header from './@header/page';
 import Footer from './@footer/page';
 import Head from 'next/head';
 
+import localFont from 'next/font/local';
+ 
+// Font files can be colocated inside of `app`
+const avenir = localFont({
+  src: './AvenirLT-Light.woff2',
+  variable: '--font-avenir',
+  display: 'swap',
+})
 
 
-const inter = Inter({ subsets: ['latin'] })
+const dancingScript = Dancing_Script({ 
+  subsets: ['latin'],
+  variable: '--font-dancing-script',
+  display: 'swap',
+   })
 
 export const metadata: Metadata = {
   title: 'Restaurant | Væst | Løgstør',
@@ -31,7 +43,7 @@ export default function RootLayout({
           <meta name="msapplication-TileColor" content="#00aba9"/>
           <meta name="theme-color" content="#ffffff"/>
       </Head>
-      <body className={inter.className} id='body'>
+      <body id='body'>
         <Header />        
         {children}        
         <Footer />
