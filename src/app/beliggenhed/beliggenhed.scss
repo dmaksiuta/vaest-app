@@ -54,9 +54,20 @@
         align-items: center;
         gap: 20rem;
         flex-grow: 1;
-        img {
+        img{
             max-width: 24rem;
             cursor: pointer;
+        }
+        svg {
+            width: 24rem;
+            height: 24rem;
+            cursor: pointer;            
+        }
+    }
+    .row__svg:active {
+        svg path {
+            fill: red;
+            stroke: red;
         }
     }
     .row__counter {
