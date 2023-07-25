@@ -1,16 +1,18 @@
-// @font-face {
-//     font-family: 'Avenir LT';
-//     src: url('AvenirLT-Light.woff2') format('woff2');         
-//     font-weight: 400;
-//     font-style: normal;
-//     font-display: swap;     
-//   }
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-//   @font-face {
-//     font-family: 'Futura LT';
-//     src: url('FuturaLT-Book.woff2') format('woff2');         
-//     font-weight: 400;
-//     font-style: normal;
-//     font-display: swap;     
-//   }
+@font-face {
+    font-family: 'Avenir LT';
+    src: url('/avenirlt_light.woff2') format('woff2');         
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;     
+  }
+
+  @font-face {
+    font-family: 'Futura LT';
+    src: url('/FuturaLT-Book.woff2') format('woff2');         
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;     
+  }
 
