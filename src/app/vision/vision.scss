@@ -4,9 +4,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15rem;
-    align-items: center;   
+    align-items: center; 
+     
     img {
-        max-height: 1060rem;
+        height: 1060rem;
         filter:brightness(0.95);
     }
     @include tablet {
@@ -19,7 +20,8 @@
     &__info {
         max-width: 460rem;
         margin-inline: auto;
-        
+        padding-top: 150rem;
+        padding-bottom: 120rem;
         @include tablet {
             padding: 0 15rem; 
             text-align: center;
