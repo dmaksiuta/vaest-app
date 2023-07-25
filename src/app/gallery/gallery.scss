@@ -52,12 +52,18 @@
     }
 }
 &__swiper {
-    padding: 0 40rem;    
+    padding: 0 40rem;
+    @include tablet-small {
+        padding: 0;
+    }    
 }
 &__picture {
     max-width: 70%;
     margin-inline: auto;
-    position: relative;    
+    position: relative;
+    @include tablet-small {
+        max-width: 100%;
+    }     
 }
 .swiper-button-prev, .swiper-button-next  {
     color: $black;
