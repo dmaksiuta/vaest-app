@@ -17,13 +17,7 @@ export default function Beliggenhed() {
     }; 
     const closeModal = () => {
         setModalOpen(false);
-      }; 
-
-    //   const handleCounterClick = () => {
-    //     console.log('Counter clicked!');
-    //     setCounter(counter + 1);
-    //   };
-      
+      };
       
       useEffect(() => {
         const htmlElement = document.getElementById("html");

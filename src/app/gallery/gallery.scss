@@ -1,0 +1,38 @@
+@import '../scss/style.scss';
+
+
+.gallery {
+    
+    &__icons {
+       
+        display: flex;
+        align-items: center;
+        gap: 20rem;
+        flex-grow: 1;
+        img {
+            max-width: 24rem;
+            max-height: 24rem;
+            cursor: pointer;
+        }
+        svg {
+            width: 24rem;
+            height: 24rem;
+            cursor: pointer;            
+        }
+    }
+    &__svg:active {
+    svg path {
+        fill: red;
+        stroke: red;
+    }
+}
+&__counter {
+    @include text ($ff, 17rem, 30rem, 400, $black);
+    z-index: 15;
+    margin-right: auto;
+}
+&__swiper {
+    padding: 0 40rem;
+}
+
+}

@@ -6,6 +6,7 @@ import '../bygning/bygning.scss'
 import Modal from "../modal/modal";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import Gallery from '../gallery/gallery';
 
 
 import 'swiper/css';
@@ -137,7 +138,9 @@ export default function Bygning() {
                 </Swiper>
                 </div>
             
-            <Modal closeModal={closeModal} modalOpen={modalOpen} />               
+            <Modal closeModal={closeModal} modalOpen={modalOpen} />
+            <Gallery />
+
         </div>
         
     )
