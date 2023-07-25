@@ -8,8 +8,8 @@
     width: 100%;
     background-color: $white;
     z-index: 999;
-    padding-bottom: 120rem;
     height: 100vh;
+    display: none;
     &__header {
         padding: 30rem 20rem;
         display: flex;
@@ -42,6 +42,9 @@
     z-index: 15;
     margin-right: auto;
 }
+&__close {
+    cursor: pointer;
+}
 
 &__swiper {
     padding: 0 40rem;    
@@ -49,7 +52,7 @@
 &__picture {
     max-width: 70%;
     margin-inline: auto;
-    position: relative;
+    position: relative;    
 }
 .picture__small {
     position: absolute;
@@ -63,4 +66,8 @@
     }
 }
 
+}
+.gallery.active {
+    display: block;
+   
 }

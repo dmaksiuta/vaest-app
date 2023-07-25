@@ -8,26 +8,22 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import Gallery from '../gallery/gallery';
 
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 
-
-
-
 export default function Bygning() {
     const [modalOpen, setModalOpen] = useState(false);
     const [counter, setCounter] = useState(0);
+    const [galleryActive, setGalleryActive] = useState(false);
 
     const openModal = () => {
         setModalOpen(true);
     }; 
     const closeModal = () => {
         setModalOpen(false);
-      }; 
-
+      };
       
       useEffect(() => {
         const htmlElement = document.getElementById("html");
@@ -47,6 +43,14 @@ export default function Bygning() {
             bodyElement.classList.remove("overflow-hidden");
         };
     }, [modalOpen]);
+
+    const toggleGallery = () => {
+        setGalleryActive(!galleryActive);
+    };
+
+    const deactivateGallery = () => {
+        setGalleryActive(false);
+    };
 
     return (
         <div className="bygning-section">                
@@ -90,7 +94,7 @@ export default function Bygning() {
                     onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide>
-                        <div className="bygning-section__picture picture">                
+                        <div className="bygning-section__picture picture" onClick={toggleGallery}>                
                             <img src="main-bg-1.jpg" alt="restaurant building"/> 
                             <div className='picture__small'>
                                 <img src="no57_logo.png" className='picture__small' alt="number 57" />
@@ -112,7 +116,7 @@ export default function Bygning() {
                             <div className="picture__content">
                                 <div className="picture__icons">
                                     <div className="picture__svg" onClick={()=>setCounter(counter+1)}>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" onClick={()=>setCounter(counter+1)}/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={()=>setCounter(counter+1)}/></svg>
                                     </div>
                                     <div className="picture__counter">{counter}</div>
                                 <img src="icons/arrow-black.svg" alt="share icon" onClick={openModal}/>
@@ -136,10 +140,10 @@ export default function Bygning() {
                     </SwiperSlide>
                 
                 </Swiper>
-                </div>
+            </div>
             
             <Modal closeModal={closeModal} modalOpen={modalOpen} />
-            <Gallery />
+            <Gallery isActive={galleryActive} deactivateGallery={deactivateGallery} />
 
         </div>
         

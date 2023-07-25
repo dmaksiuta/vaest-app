@@ -11,7 +11,7 @@ import { mdiClose } from '@mdi/js';
 
 
 
-export default function Gallery() {    
+export default function Gallery({ isActive, deactivateGallery }) {    
     const [modalOpen, setModalOpen] = useState(false);
     const [counter, setCounter] = useState(0);
 
@@ -42,7 +42,7 @@ export default function Gallery() {
     }, [modalOpen]);
 
     return (
-        <div className="gallery">               
+        <div className={`gallery ${isActive ? 'active' : ''}`}>               
             <div className="gallery__header">
                 <div className="gallery__icons">
                     <img src="icons/arrow-black.svg" alt="share icon" onClick={openModal}/>
@@ -51,7 +51,7 @@ export default function Gallery() {
                     </div>
                     <div className="gallery__counter">{counter}</div>                
                 </div>
-                <div className="gallery__close">
+                <div className="gallery__close" onClick={deactivateGallery}>
                     <svg xmlns="http://www.w3.org/2000/svg" 
                         width="24"
                         height="24"
@@ -91,7 +91,7 @@ export default function Gallery() {
                             </div>
                         </SwiperSlide>
                 </Swiper>
-            </div>
+            </div>            
             <Modal closeModal={closeModal} modalOpen={modalOpen} />
         </div>
         
