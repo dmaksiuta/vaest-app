@@ -6,6 +6,7 @@ import '../gallery/gallery.scss'
 import Modal from "../modal/modal";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { mdiClose } from '@mdi/js';
 
 
 
@@ -49,6 +50,15 @@ export default function Gallery() {
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" onClick={()=>setCounter(counter+1)}/></svg>
                     </div>
                     <div className="gallery__counter">{counter}</div>                
+                </div>
+                <div className="gallery__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        >
+                        <path d={mdiClose} />
+                    </svg>
                 </div> 
             </div>
             <div className="gallery__swiper">
