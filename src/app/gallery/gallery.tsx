@@ -6,7 +6,7 @@ import '../gallery/gallery.scss'
 import Modal from "../modal/modal";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
-import { mdiClose } from '@mdi/js';
+import { mdiClose, mdiArrowExpand  } from '@mdi/js';
 
 
 
@@ -44,6 +44,9 @@ export default function Gallery({ isActive, deactivateGallery }) {
     return (
         <div className={`gallery ${isActive ? 'active' : ''}`}>               
             <div className="gallery__header">
+            <div className="gallery__expand" onClick={deactivateGallery}>
+                    <img src="icons/expand.svg" alt="expand icon" />                    
+                </div>
                 <div className="gallery__icons">
                     <img src="icons/arrow-black.svg" alt="share icon" onClick={openModal}/>
                     <div className="gallery__svg" onClick={()=>setCounter(counter+1)}>
@@ -52,13 +55,7 @@ export default function Gallery({ isActive, deactivateGallery }) {
                     <div className="gallery__counter">{counter}</div>                
                 </div>
                 <div className="gallery__close" onClick={deactivateGallery}>
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        >
-                        <path d={mdiClose} />
-                    </svg>
+                    <img src="icons/close.svg" alt="close icon" />                    
                 </div> 
             </div>
             <div className="gallery__swiper">

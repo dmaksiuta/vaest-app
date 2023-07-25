@@ -11,14 +11,15 @@
     height: 100vh;
     display: none;
     &__header {
-        padding: 30rem 20rem;
+        padding: 30rem 40rem 10rem;
         display: flex;
         align-items: center;
+        gap: 70rem;
     }
     &__icons {       
         display: flex;
         align-items: center;
-        gap: 20rem;
+        gap: 30rem;
         flex-grow: 1;
         img {
             max-width: 24rem;
@@ -41,11 +42,15 @@
     @include text ($ff, 17rem, 30rem, 400, $black);
     z-index: 15;
     margin-right: auto;
+    margin-left: -25rem;
 }
-&__close {
+&__close, &__expand {
     cursor: pointer;
+    img {
+        max-width: 35rem;
+        max-height: 35rem;
+    }
 }
-
 &__swiper {
     padding: 0 40rem;    
 }
@@ -53,6 +58,10 @@
     max-width: 70%;
     margin-inline: auto;
     position: relative;    
+}
+.swiper-button-prev, .swiper-button-next  {
+    color: $black;
+    max-height: 27rem;
 }
 .picture__small {
     position: absolute;
