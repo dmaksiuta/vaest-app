@@ -6,8 +6,11 @@ import '../beliggenhed/beliggenhed.scss'
 import Modal from "../modal/modal";
 
 
+
+
 export default function Beliggenhed() {    
     const [modalOpen, setModalOpen] = useState(false);
+    const [counter, setCounter] = useState(0);
 
     const openModal = () => {
         setModalOpen(true);
@@ -15,6 +18,11 @@ export default function Beliggenhed() {
     const closeModal = () => {
         setModalOpen(false);
       }; 
+
+    //   const handleCounterClick = () => {
+    //     console.log('Counter clicked!');
+    //     setCounter(counter + 1);
+    //   };
       
       
       useEffect(() => {
@@ -50,7 +58,8 @@ export default function Beliggenhed() {
                     <img src="beliggenhed/map-1.webp" alt="map"/> 
                     <div className="row__content">
                         <div className="row__icons">
-                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/like.svg" alt="like" onClick={()=>setCounter(counter+1)}/>
+                            <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
                         </div>                    
                     </div>                                           
@@ -59,7 +68,8 @@ export default function Beliggenhed() {
                     <img src="beliggenhed/shore-1.webp" alt="seashore"/>
                     <div className="row__content">
                         <div className="row__icons">
-                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/like.svg" alt="like" onClick={()=>setCounter(counter+1)}/>
+                            <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
                         </div>                    
                     </div> 
@@ -69,7 +79,8 @@ export default function Beliggenhed() {
                     <p>Bjørnholms Bugt</p>
                     <div className="row__content">
                         <div className="row__icons">
-                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/like.svg" alt="like" onClick={()=>setCounter(counter+1)}/>
+                            <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
                         </div>                    
                     </div> 
@@ -79,7 +90,8 @@ export default function Beliggenhed() {
                     <img src="beliggenhed/sunset_1.webp" alt="sea sunset"/> 
                     <div className="row__content">
                         <div className="row__icons">
-                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/like.svg" alt="like" onClick={()=>setCounter(counter+1)}/>
+                            <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
                         </div>                    
                     </div> 
@@ -96,7 +108,8 @@ export default function Beliggenhed() {
                     
                     <div className="row__content">
                         <div className="row__icons">
-                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/like.svg" alt="like" onClick={()=>setCounter(counter+1)}/>
+                            <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
                         </div>                    
                     </div>                                                           
@@ -105,7 +118,8 @@ export default function Beliggenhed() {
                     <img src="beliggenhed/map-2.webp" alt="map"/>  
                     <div className="row__content">
                         <div className="row__icons">
-                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/like.svg" alt="like" onClick={()=>setCounter(counter+1)}/>
+                            <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
                         </div>                    
                     </div>                                         
@@ -114,7 +128,8 @@ export default function Beliggenhed() {
                     <p>God Parkering</p>
                     <div className="row__content">
                         <div className="row__icons">
-                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/like.svg" alt="like" onClick={()=>setCounter(counter+1)}/>
+                            <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
                         </div>                    
                     </div>                                       
@@ -123,7 +138,8 @@ export default function Beliggenhed() {
                     <img src="beliggenhed/shore-2_1.webp" alt="seashore"/> 
                     <div className="row__content">
                         <div className="row__icons">
-                            <img src="icons/like.svg" alt="like"/>
+                            <img src="icons/like.svg" alt="like" onClick={()=>setCounter(counter+1)}/>
+                            <div className="row__counter">{counter}</div>
                             <img src="icons/arrow.svg" alt="share" onClick={openModal}/>
                         </div>                    
                     </div>                                           

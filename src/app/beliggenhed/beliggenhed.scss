@@ -50,11 +50,19 @@
         bottom: 30rem;
         left: 30rem;
         right: 30rem;
-        @include flex-between;
+        display: flex;
+        align-items: center;
+        gap: 20rem;
+        flex-grow: 1;
         img {
             max-width: 24rem;
             cursor: pointer;
         }
+    }
+    .row__counter {
+        @include text ($ff, 17rem, 30rem, 400, $white);
+        z-index: 15;
+        margin-right: auto;
     }
     .row__card {
         cursor: pointer;        
@@ -87,8 +95,6 @@
         background: $primary;
     } 
     .video-container { 
-        
-              
         video {            
             object-fit: cover;
             position: absolute;
