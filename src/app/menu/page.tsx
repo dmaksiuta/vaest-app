@@ -1,5 +1,6 @@
 import Link from "next/link";
 import '../menu/menu.scss'
+import Image from 'next/image'
 
 export default function Menu() {
     return (
@@ -13,10 +14,10 @@ export default function Menu() {
                         <p className="desc">Der vil dog i hver sæson blive lagt særdeles vægt på konceptet om jordnær ambition, menuen og drikkevarer skal balancere noget enkelt lokalt og genkendeligt med ambitiøs klassisk elegance.</p>
                         <p className="desc">Køkkenchefen, eller parret, vil få ansvaret for al daglig drift igennem månederne juni, juli og august og vil blive aflønnet delvist med en fast løn og delvist med en del af overskuddet fra driften.</p>
                         <p className="desc">Hvis du mener at du passer på profilen som køkkenchef hos Væst, så <span><Link href="/kontakt">kontakt</Link></span> os.</p>
-                        <p className="desc italic">Menuen nedenfor er blot til inspiration.</p>                         
-                    </div> 
+                        <p className="desc italic">Menuen nedenfor er blot til inspiration.</p>
+                    </div>
                     <Link href="/folkene" className="btn menuDesc-section__btn">Læs mere on folkene bag</Link>
-                </div>                   
+                </div>
             </div>
 
             <div className="menu-section">
@@ -26,66 +27,66 @@ export default function Menu() {
                     <h4 className="item__title">Forretter</h4>
                     <div className="item__row">
                         <div className="item__card">
-                            <img src="menu/foretter-1.jpg" alt="salad"/>
+                            <Image width={232} height={232} src="/menu/foretter-1.jpg" alt="salad"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="menu/foretter-2.jpg" alt="first course"/>
+                            <Image width={232} height={232} src="/menu/foretter-2.jpg" alt="first course"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="menu/foretter-3.jpg" alt="salad"/>
+                            <Image width={232} height={232} src="/menu/foretter-3.jpg" alt="salad"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="menu/foretter-4.jpg" alt="first course"/>
+                            <Image width={232} height={232} src="/menu/foretter-4.jpg" alt="first course"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="menu/foretter-5.jpg" alt="dish"/>
+                            <Image width={232} height={232} src="/menu/foretter-5.jpg" alt="dish"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
 
                 <div className="item menu-section__item">
                     <h4 className="item__title">Hovedret</h4>
                     <div className="item__row">
                         <div className="item__card">
-                            <img src="menu/Hovedret-1.jpg" alt="fish"/>
+                            <Image width={232} height={232} src="/menu/Hovedret-1.jpg" alt="fish"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="menu/Hovedret-2.jpg" alt="second course"/>
+                            <Image width={232} height={232} src="/menu/Hovedret-2.jpg" alt="second course"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="menu/foretter-3.jpg" alt="fish"/>
+                            <Image width={232} height={232} src="/menu/foretter-3.jpg" alt="fish"/>
                             <div className="sloganitem__desc">Væst</div>
                         </div>
                         <div className="item__card">
-                            <img src="menu/Hovedret-4.jpg" alt="spaghetti"/>
-                            <div className="slogan item__desc">Væst</div>                
-                        </div>
-                        <div className="item__card">
-                            <img src="menu/Hovedret-5.jpg" alt="salad"/>
+                            <Image width={232} height={232} src="/menu/Hovedret-4.jpg" alt="spaghetti"/>
                             <div className="slogan item__desc">Væst</div>
                         </div>
-                    </div>                    
+                        <div className="item__card">
+                            <Image width={232} height={232} src="/menu/Hovedret-5.jpg" alt="salad"/>
+                            <div className="slogan item__desc">Væst</div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="item menu-section__item">
                     <h4 className="item__title">Dessert</h4>
                     <div className="item__row">
                         <div className="item__card">
-                            <img src="menu/dessert.jpg" alt="dessert"/>
+                            <Image width={232} height={232} src="/menu/dessert.jpg" alt="dessert"/>
                             <div className="desc item__desc">Væst</div>
                         </div>
                     </div>
                 </div>
             </div>
         </>
-        
+
     )
 
 }

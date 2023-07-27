@@ -1,12 +1,13 @@
 import Link from "next/link";
 import '../vision/vision.scss'
+import Image from 'next/image'
 
 export default function Vision() {
     return (
         <div className="vision-section">
             <div className="vision-section__img">
-                <img src="vision.jpg" alt="sea sunset"/>
-            </div>                
+                <Image width={671.5} height={1060} src="/vision.jpg" alt="sea sunset"/>
+            </div>
             <div className="vision-section__info">
                 <h3 className="vision-section__title">Vision</h3>
                 <p className="slogan vision-section__slogan">Jordnær ambition</p>
@@ -17,9 +18,9 @@ export default function Vision() {
                     <p className="desc">Et sted der er tydeligt ambitiøst og gerne vil blive til et navn, hvis ikke i landen så i regionen, men også gerne være afslappet og jordnær på en og samme tid.</p>
                 </div>
                 <Link href="/beliggenhed" className="btn vision-section__btn">Se beliggenhed</Link>
-            </div>                
+            </div>
         </div>
-        
+
     )
 
 }

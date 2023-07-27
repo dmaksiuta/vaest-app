@@ -5,6 +5,7 @@ import styles from './page.module.scss';
 import '../app/scss/main-section.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
+import Image from 'next/image'
 
 
 import 'swiper/css';
@@ -29,14 +30,14 @@ export default function Home() {
             }}
             navigation
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}      
+            scrollbar={{ draggable: true }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
           >
-              <SwiperSlide><img src="main-bg-1.jpg" alt="restaurant building"/></SwiperSlide>
-              <SwiperSlide><img src="main-bg-2.jpg" alt="restaurant building"/></SwiperSlide>
-              <SwiperSlide><img src="main-bg-3.jpg" alt="restaurant building"/></SwiperSlide>
-        
+              <SwiperSlide><Image width={1336} height={680} src="/main-bg-1.jpg" alt="restaurant building"/></SwiperSlide>
+              <SwiperSlide><Image width={1336} height={680} src="/main-bg-2.jpg" alt="restaurant building"/></SwiperSlide>
+              <SwiperSlide><Image width={1336} height={680} src="/main-bg-3.jpg" alt="restaurant building"/></SwiperSlide>
+
           </Swiper>
         </div>
         <div className="main-section__info">
@@ -45,7 +46,7 @@ export default function Home() {
             <p className="text-14 main-section__desc">Vi ønsker at skabe et mødested med en bedre dansk restaurantoplevelse, for Trend sommerhusområde og dets beboere samt dagsgæster, til synet af endeløse skiftende solnedgange over Limfjorden ved den smukke Trend strand med øerne Fyr og Livø i baggrunden.</p>
             <p className="text-14 main-section__desc">Projektet er beliggende på Gl. Amtsvej 39, Trend, 9670 Løgstør. Der hvor den gamle købmand blev bygget tilbage i 1949.</p>
             <Link href="/baggrund" className="btn main-section__btn">Læs mere om projektet</Link>
-        </div>                                
+        </div>
       </div>
     </main>
   )
