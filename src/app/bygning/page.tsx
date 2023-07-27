@@ -27,21 +27,26 @@ export default function Bygning() {
 	};
 
 	useEffect(() => {
+
 		const htmlElement = document.getElementById("html");
 		const bodyElement = document.getElementById("body");
+		if (htmlElement && bodyElement) {
+			if (modalOpen) {
+				htmlElement.classList.add("overflow-hidden");
+				bodyElement.classList.add("overflow-hidden");
+			} else {
+				htmlElement.classList.remove("overflow-hidden");
+				bodyElement.classList.remove("overflow-hidden");
+			}
 
-		if (modalOpen) {
-			htmlElement.classList.add("overflow-hidden");
-			bodyElement.classList.add("overflow-hidden");
-		} else {
-			htmlElement.classList.remove("overflow-hidden");
-			bodyElement.classList.remove("overflow-hidden");
 		}
 
 		// Clean up the effect on component unmount
 		return () => {
-			htmlElement.classList.remove("overflow-hidden");
-			bodyElement.classList.remove("overflow-hidden");
+			if (htmlElement && bodyElement) {
+				htmlElement.classList.remove("overflow-hidden");
+				bodyElement.classList.remove("overflow-hidden");
+			}
 		};
 	}, [modalOpen]);
 

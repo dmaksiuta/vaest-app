@@ -28,7 +28,7 @@ export default function Kontakt() {
                     </label>
                     <label className="field desc">
                         <span className="field__title">Besked *</span>
-                        <textarea  className="field__textarea" placeholder="Din besked til os" rows="10" required></textarea>
+                        <textarea  className="field__textarea" placeholder="Din besked til os" rows={10} required></textarea>
                     </label>
                     <button type="submit" className="btn desc kontakt-section__btn">Send</button>
 
