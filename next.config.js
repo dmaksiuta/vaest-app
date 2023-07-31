@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	distDir: 'build',
-	output: 'export',
-  	basePath: '/github-pages',
-}
+	distDir: "build",
+	output: "export",
+	images: {
+		loader: "akamai",
+		path: "",
+	},
+	assetPrefix: "./",
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
