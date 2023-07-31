@@ -15,6 +15,8 @@
         display: flex;
         align-items: center;
         gap: 70rem;
+        position: relative;
+        z-index: 10;
     }
     &__icons {       
         display: flex;
@@ -55,7 +57,7 @@
         }
     }
 }
-&__expand {
+&__expand {    
     @include mobile {
         display: none;
     }
@@ -93,6 +95,12 @@
 
 }
 .gallery.active {
-    display: block;
-   
+    display: block;   
+}
+.gallery__picture.fullScreen img {
+    height: 100vh;
+    max-height: 100%;       
+}
+.gallery__swiper.fullScreen {
+    transform: translateY(-75px);
 }

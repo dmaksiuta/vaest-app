@@ -11,6 +11,7 @@ import Image from "next/image";
 export default function Gallery({ isActive, deactivateGallery }: any) {
 	const [modalOpen, setModalOpen] = useState(false);
 	const [counter, setCounter] = useState(0);
+	const [fullScreen, setFullScreen] = useState(false);
 
 	const openModal = () => {
 		setModalOpen(true);
@@ -41,10 +42,18 @@ export default function Gallery({ isActive, deactivateGallery }: any) {
 		};
 	}, [modalOpen]);
 
+	const toggleFullScreen = () => {
+		setFullScreen(!fullScreen);
+	  };
+	
+	  const expandGallery = () => {
+		setFullScreen(!fullScreen); // Toggle fullScreen state on expand click
+	  };
+
 	return (
 		<div className={`gallery ${isActive ? "active" : ""}`}>
 			<div className="gallery__header">
-				<div className="gallery__expand" onClick={deactivateGallery}>
+				<div className={`gallery__expand ${fullScreen ? "fullScreen" : ""}`} onClick={expandGallery}>
 					<Image
 						width={35}
 						height={35}
@@ -91,7 +100,7 @@ export default function Gallery({ isActive, deactivateGallery }: any) {
 					/>
 				</div>
 			</div>
-			<div className="gallery__swiper">
+			<div className={`gallery__swiper ${fullScreen ? "fullScreen" : ""}`}>
 				<Swiper
 					modules={[Navigation, Pagination, Scrollbar]}
 					spaceBetween={20}
@@ -103,7 +112,9 @@ export default function Gallery({ isActive, deactivateGallery }: any) {
 					onSwiper={(swiper) => console.log(swiper)}
 				>
 					<SwiperSlide>
-						<div className="gallery__picture picture">
+						<div className={`gallery__picture picture ${
+                isActive && fullScreen ? "fullScreen" : ""
+              }`}>
 							<Image
 								width={894}
 								height={502}
@@ -122,7 +133,9 @@ export default function Gallery({ isActive, deactivateGallery }: any) {
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<div className="gallery__picture picture">
+						<div className={`gallery__picture picture ${
+                isActive && fullScreen ? "fullScreen" : ""
+              }`}>
 							<Image
 								width={894}
 								height={502}
@@ -132,7 +145,9 @@ export default function Gallery({ isActive, deactivateGallery }: any) {
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<div className="gallery__picture picture">
+						<div className={`gallery__picture picture ${
+                isActive && fullScreen ? "fullScreen" : ""
+              }`}>
 							<Image
 								width={894}
 								height={502}
