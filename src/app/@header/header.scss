@@ -19,7 +19,7 @@
         display: flex;
         align-items: center;
         gap: 20rem;
-        a {
+        a, div {
             @include text ($ff, 14rem, 30rem, 400, $links);
         }
         img {

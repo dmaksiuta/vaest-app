@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import '../@header/header.scss';
 import Image from 'next/image'
 
@@ -47,6 +47,34 @@ export default function Header() {
         });
         }
     }
+    useEffect(() => {        
+        const accordionItems = document.querySelectorAll('.accordion__item');
+    
+        const toggleItem = (item) => {
+          const accordionContent = item.querySelector('.accordion__content');
+          if (item.classList.contains('accordion-open')) {
+            accordionContent.removeAttribute('style');
+            item.classList.remove('accordion-open');
+          } else {
+            accordionContent.style.height = accordionContent.scrollHeight + 'px';
+            item.classList.add('accordion-open');
+          }
+        };
+    
+        accordionItems.forEach((item) => {
+          const accordionHeader = item.querySelector('.accordion__header');
+    
+          accordionHeader.addEventListener('click', () => {
+            const openItem = document.querySelector('.accordion-open');
+    
+            toggleItem(item);
+    
+            if (openItem && openItem !== item) {
+              toggleItem(openItem);
+            }
+          });
+        });
+      }, []);
 
 
 
@@ -81,7 +109,7 @@ export default function Header() {
                     <div className="accordion">
                         <div className="accordion__item">
                             <div className="accordion__header">
-                                <a href="#">Mere</a>
+                                <div href="#">Mere</div>
                                 <span><svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"

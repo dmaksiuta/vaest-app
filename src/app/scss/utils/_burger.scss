@@ -53,7 +53,7 @@
         opacity: 0;
         transition: $transition;
         z-index: -99;
-        li a {
+        li a, li div {
             @include text ($ff-add, 22rem, 50rem, 400, $primary);
             transition: $transition;
             &:hover {
