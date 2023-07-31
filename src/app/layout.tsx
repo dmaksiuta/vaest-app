@@ -6,15 +6,12 @@ import Head from 'next/head';
 
 
 export const metadata: Metadata = {
-  title: 'Restaurant | Væst | Løgstør',  
+  title: 'Restaurant | Væst | Løgstør',
 }
 
 export default function RootLayout({
-  children,  
-}: {
-  children: React.ReactNode,
- 
-}) {
+  children,
+}: any) {
   return (
     <html lang="en" id='html'>
       <Head>
@@ -27,10 +24,10 @@ export default function RootLayout({
           <meta name="theme-color" content="#ffffff"/>
       </Head>
       <body id='body'>
-        <Header />        
-        {children}        
+        <Header />
+        {children}
         <Footer />
-        
+
 
       </body>
     </html>
