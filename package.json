@@ -1,6 +1,5 @@
 {
   "name": "vaest-app",
-  "homepage": "https://dmaksiuta.github.io/vaest-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
