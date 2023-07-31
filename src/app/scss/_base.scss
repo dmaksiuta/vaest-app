@@ -9,8 +9,12 @@ html {
 body {
     height: 100%;
     font-family: $ff;    
-    color: $primary;
+    color: $primary; 
     
+}
+.wrapper {
+    max-width: 1920px;
+    margin-inline: auto;
 }
 .overflow-hidden {
 	overflow-y: hidden;
