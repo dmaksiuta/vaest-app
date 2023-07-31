@@ -57,6 +57,10 @@ export default function Bygning() {
 	const deactivateGallery = () => {
 		setGalleryActive(false);
 	};
+	const handleArrowClick = (event) => {
+		event.stopPropagation();
+		openModal(); 
+	  };
 
 	return (
 		<div className="bygning-section">
@@ -111,13 +115,13 @@ export default function Bygning() {
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 									</div>
 									<div className="picture__counter">{counter}</div>
-									<Image width={24} height={24} src="/icons/arrow-black.svg" alt="share icon" onClick={openModal} />
+									<Image width={24} height={24} src="/icons/arrow-black.svg" alt="share icon" onClick={handleArrowClick} />
 								</div>
 							</div>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<div className="bygning-section__picture picture">
+						<div className="bygning-section__picture picture" onClick={toggleGallery}>
 							<Image width={995} height={559} src="/main-bg-2.jpg" alt="restaurant building" />
 							<div className="picture__content">
 								<div className="picture__icons">
@@ -125,13 +129,13 @@ export default function Bygning() {
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 									</div>
 									<div className="picture__counter">{counter}</div>
-									<Image width={24} height={24} src="/icons/arrow-black.svg" alt="share icon" onClick={openModal} />
+									<Image width={24} height={24} src="/icons/arrow-black.svg" alt="share icon" onClick={handleArrowClick} />
 								</div>
 							</div>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<div className="bygning-section__picture picture">
+						<div className="bygning-section__picture picture" onClick={toggleGallery}>
 							<Image width={995} height={559} src="/main-bg-3.jpg" alt="restaurant building" />
 							<div className="picture__content">
 								<div className="picture__icons">
@@ -139,7 +143,7 @@ export default function Bygning() {
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 									</div>
 									<div className="picture__counter">{counter}</div>
-									<Image width={24} height={24} src="/icons/arrow-black.svg" alt="share icon" onClick={openModal} />
+									<Image width={24} height={24} src="/icons/arrow-black.svg" alt="share icon" onClick={handleArrowClick} />
 								</div>
 							</div>
 						</div>
