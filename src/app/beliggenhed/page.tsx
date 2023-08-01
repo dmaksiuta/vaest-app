@@ -139,7 +139,8 @@ export default function Beliggenhed() {
 					</div>
 					{videoPlaying ? (
 						<div className="video-container">
-							<video src="/beliggenhed/video-vaest.mp4" preload="metadata" loop autoPlay muted id="myVideo"></video>
+							<video width={332} height={332} src="/beliggenhed/video-vaest.mp4" preload="metadata" loop autoPlay muted id="myVideo"></video>
+							{/* <video width={332} height={332}   src="https://photos.app.goo.gl/MUjMgNTbhhuLoLbU7" preload="metadata" loop autoPlay muted id="myVideo"></video> */}
 						</div>
 						) : (
 						<Image width={332} height={332} src="/beliggenhed/video-poster.png" alt="seashore" />
