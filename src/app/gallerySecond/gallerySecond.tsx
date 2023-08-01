@@ -120,7 +120,10 @@ export default function GallerySecond({ isActive, deactivateGallery }: any) {
 						<div className={`gallerySecond__content ${
                 isActive && fullScreen ? "fullScreen" : ""
               }`}>
-							<Image width={894} height={600} src="/beliggenhed/video-poster.png" alt="seashore" />
+							{/* <Image width={894} height={600} src="/beliggenhed/video-poster.png" alt="seashore" /> */}
+							<div className="video-container">
+								<video src="/beliggenhed/video-vaest.mp4" preload="metadata" autoPlay muted id="myVideo"></video>
+							</div>  
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>

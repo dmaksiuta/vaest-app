@@ -143,7 +143,8 @@ export default function Beliggenhed() {
 						</div>
 						) : (
 						<Image width={332} height={332} src="/beliggenhed/video-poster.png" alt="seashore" />
-						)}					
+						)}
+					
 
 					<div className="row__content">
 						<div className="row__icons">
