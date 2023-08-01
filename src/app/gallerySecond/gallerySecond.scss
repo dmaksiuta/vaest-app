@@ -18,6 +18,8 @@
         display: flex;
         align-items: center;
         gap: 70rem;
+        position: relative;
+        z-index: 10;
     }
     &__icons {       
         display: flex;
@@ -98,4 +100,11 @@
 .gallerySecond.active {
     display: block;
    
+}
+.gallerySecond__content.fullScreen img {
+    height: 100vh;
+    max-height: 100%;       
+}
+.gallerySecond__swiper.fullScreen {
+    transform: translateY(-75px);
 }

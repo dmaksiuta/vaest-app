@@ -11,6 +11,7 @@ import Image from 'next/image'
 export default function GallerySecond({ isActive, deactivateGallery }: any) {
 	const [modalOpen, setModalOpen] = useState(false);
 	const [counter, setCounter] = useState(0);
+	const [fullScreen, setFullScreen] = useState(false);
 
 	const openModal = () => {
 		setModalOpen(true);
@@ -42,10 +43,19 @@ export default function GallerySecond({ isActive, deactivateGallery }: any) {
 		};
 	}, [modalOpen]);
 
+
+	const toggleFullScreen = () => {
+		setFullScreen(!fullScreen);
+	  };
+	
+	  const expandGallery = () => {
+		setFullScreen(!fullScreen); // Toggle fullScreen state on expand click
+	  };
+
 	return (
 		<div className={`gallerySecond ${isActive ? 'active' : ''}`}>
 			<div className="gallerySecond__header">
-				<div className="gallerySecond__expand" onClick={deactivateGallery}>
+				<div className={`gallerySecond__expand ${fullScreen ? "fullScreen" : ""}`} onClick={expandGallery}>
 					<Image width={35} height={35} src="/icons/expand.svg" alt="expand icon" />
 				</div>
 				<div className="gallerySecond__icons">
@@ -59,7 +69,7 @@ export default function GallerySecond({ isActive, deactivateGallery }: any) {
 					<Image width={35} height={35} src="/icons/close.svg" alt="close icon" />
 				</div>
 			</div>
-			<div className="gallerySecond__swiper">
+			<div className={`gallerySecond__swiper ${fullScreen ? "fullScreen" : ""}`}>
 				<Swiper
 					modules={[Navigation, Pagination, Scrollbar]}
 					spaceBetween={20}
@@ -71,42 +81,58 @@ export default function GallerySecond({ isActive, deactivateGallery }: any) {
 					onSwiper={(swiper) => console.log(swiper)}
 				>
 					<SwiperSlide>
-						<div className="gallerySecond__content">
+						<div className={`gallerySecond__content ${
+                isActive && fullScreen ? "fullScreen" : ""
+              }`}>
 							<Image width={894} height={600} src="/beliggenhed/map-1.webp" alt="map" />
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<div className="gallerySecond__content">
+						<div className={`gallerySecond__content ${
+                isActive && fullScreen ? "fullScreen" : ""
+              }`}>
 							<Image width={894} height={600} src="/beliggenhed/shore-1.webp" alt="seashore" />
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<div className="gallerySecond__content _yellow">
+						<div className={`gallerySecond__content _yellow ${
+                isActive && fullScreen ? "fullScreen" : ""
+              }`}>
 							<p>Bjørnholms Bugt</p>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<div className="gallerySecond__content">
+						<div className={`gallerySecond__content ${
+                isActive && fullScreen ? "fullScreen" : ""
+              }`}>
 							<Image width={894} height={600} src="/beliggenhed/sunset_1.webp" alt="sea sunset" />
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<div className="gallerySecond__content">
+						<div className={`gallerySecond__content ${
+                isActive && fullScreen ? "fullScreen" : ""
+              }`}>
 							<Image width={894} height={600} src="/beliggenhed/video-poster.png" alt="seashore" />
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<div className="gallerySecond__content">
+						<div className={`gallerySecond__content ${
+                isActive && fullScreen ? "fullScreen" : ""
+              }`}>
 							<Image width={894} height={600} src="/beliggenhed/map-2.webp" alt="map" />
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<div className="gallerySecond__content _dark">
+						<div className={`gallerySecond__content _dark ${
+                isActive && fullScreen ? "fullScreen" : ""
+              }`}>
 							<p>God Parkering</p>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<div className="gallerySecond__content">
+						<div className={`gallerySecond__content ${
+                isActive && fullScreen ? "fullScreen" : ""
+              }`}>
 							<Image width={894} height={600} src="/beliggenhed/shore-2_1.webp" alt="seashore" />
 						</div>
 					</SwiperSlide>

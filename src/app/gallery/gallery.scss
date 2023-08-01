@@ -69,7 +69,7 @@
         padding: 0;
     }    
 }
-&__picture, &__content {
+&__picture {
     max-width: 70%;
     margin-inline: auto;
     position: relative;
@@ -97,9 +97,12 @@
 .gallery.active {
     display: block;   
 }
-.gallery__picture.fullScreen img {
-    height: 100vh;
-    max-height: 100%;       
+.gallery__picture.fullScreen {
+    max-width: 100%;
+    img {
+        height: 100vh;    
+        max-height: 100%;       
+    }
 }
 .gallery__swiper.fullScreen {
     transform: translateY(-75px);
