@@ -32,6 +32,10 @@ export default function Beliggenhed() {
 		event.stopPropagation();
 		openModal(); 
 	  };
+	  const handleLikeClick = (event) => {
+		event.stopPropagation();
+		setCounter(counter + 1); 
+	  };
 
 
 	useEffect(() => {
@@ -72,7 +76,7 @@ export default function Beliggenhed() {
 					<Image width={332} height={332} src="/beliggenhed/map-1.webp" alt="map" />
 					<div className="row__content">
 						<div className="row__icons">
-							<div className="row__svg" onClick={() => setCounter(counter + 1)}>
+							<div className="row__svg" onClick={handleLikeClick}>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 							</div>
 							<div className="row__counter">{counter}</div>
@@ -84,7 +88,7 @@ export default function Beliggenhed() {
 					<Image width={332} height={332} src="/beliggenhed/shore-1.webp" alt="seashore" />
 					<div className="row__content">
 						<div className="row__icons">
-							<div className="row__svg" onClick={() => setCounter(counter + 1)}>
+							<div className="row__svg" onClick={handleLikeClick}>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 							</div>
 							<div className="row__counter">{counter}</div>
@@ -97,7 +101,7 @@ export default function Beliggenhed() {
 					<p>Bjørnholms Bugt</p>
 					<div className="row__content">
 						<div className="row__icons">
-							<div className="row__svg" onClick={() => setCounter(counter + 1)}>
+							<div className="row__svg" onClick={handleLikeClick}>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 							</div>
 							<div className="row__counter">{counter}</div>
@@ -110,7 +114,7 @@ export default function Beliggenhed() {
 					<Image width={332} height={332} src="/beliggenhed/sunset_1.webp" alt="sea sunset" />
 					<div className="row__content">
 						<div className="row__icons">
-							<div className="row__svg" onClick={() => setCounter(counter + 1)}>
+							<div className="row__svg" onClick={handleLikeClick}>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 							</div>
 							<div className="row__counter">{counter}</div>
@@ -130,7 +134,7 @@ export default function Beliggenhed() {
 
 					<div className="row__content">
 						<div className="row__icons">
-							<div className="row__svg" onClick={() => setCounter(counter + 1)}>
+							<div className="row__svg" onClick={handleLikeClick}>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 							</div>
 							<div className="row__counter">{counter}</div>
@@ -142,7 +146,7 @@ export default function Beliggenhed() {
 					<Image width={332} height={332} src="/beliggenhed/map-2.webp" alt="map" />
 					<div className="row__content">
 						<div className="row__icons">
-							<div className="row__svg" onClick={() => setCounter(counter + 1)}>
+							<div className="row__svg" onClick={handleLikeClick}>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 							</div>
 							<div className="row__counter">{counter}</div>
@@ -154,7 +158,7 @@ export default function Beliggenhed() {
 					<p>God Parkering</p>
 					<div className="row__content">
 						<div className="row__icons">
-							<div className="row__svg" onClick={() => setCounter(counter + 1)}>
+							<div className="row__svg" onClick={handleLikeClick}>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 							</div>
 							<div className="row__counter">{counter}</div>
@@ -166,7 +170,7 @@ export default function Beliggenhed() {
 					<Image width={332} height={332} src="/beliggenhed/shore-2_1.webp" alt="seashore" />
 					<div className="row__content">
 						<div className="row__icons">
-							<div className="row__svg" onClick={() => setCounter(counter + 1)}>
+							<div className="row__svg" onClick={handleLikeClick}>
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 							</div>
 							<div className="row__counter">{counter}</div>
