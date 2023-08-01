@@ -109,7 +109,7 @@ export default function Header() {
                     <div className="accordion">
                         <div className="accordion__item">
                             <div className="accordion__header">
-                                <div href="#">Mere</div>
+                                <div>Mere</div>
                                 <span><svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"

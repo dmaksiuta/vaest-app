@@ -57,13 +57,13 @@ export default function Bygning() {
 	const deactivateGallery = () => {
 		setGalleryActive(false);
 	};
-	const handleArrowClick = (event) => {
+	const handleArrowClick = (event:any) => {
 		event.stopPropagation();
-		openModal(); 
+		openModal();
 	  };
-	const handleLikeClick = (event) => {
+	const handleLikeClick = (event:any) => {
 		event.stopPropagation();
-		setCounter(counter + 1); 
+		setCounter(counter + 1);
 	  };
 
 	return (
