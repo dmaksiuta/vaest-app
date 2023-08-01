@@ -13,6 +13,7 @@ export default function Beliggenhed() {
 	const [modalOpen, setModalOpen] = useState(false);
 	const [counter, setCounter] = useState(0);
 	const [galleryActive, setGalleryActive] = useState(false);
+	const [videoPlaying, setVideoPlaying] = useState(false);
 
 	const openModal = () => {
 		setModalOpen(true);
@@ -35,6 +36,13 @@ export default function Beliggenhed() {
 	  const handleLikeClick = (event:any) => {
 		event.stopPropagation();
 		setCounter(counter + 1);
+	  };
+	  const handleMouseEnter = () => {
+		setVideoPlaying(true);
+	  };
+	  
+	  const handleMouseLeave = () => {
+		setVideoPlaying(false);
 	  };
 
 
@@ -124,14 +132,18 @@ export default function Beliggenhed() {
 					</div>
 
 				</div>
-				<div className="row__card" onClick={toggleGallery}>
+				<div className="row__card" onClick={toggleGallery} onMouseEnter={handleMouseEnter}
+  onMouseLeave={handleMouseLeave}>
 					<div className="video__play">
 						<Image width={17} height={17} src="/icons/play.svg" alt="play button" />
 					</div>
-					{/* <div className="video-container">
-                        <video src="img/IMG_1968.mp4" preload="metadata" loop id="myVideo"></video>
-                    </div>  */}
-					<Image width={332} height={332} src="/beliggenhed/video-poster.png" alt="seashore" />
+					{videoPlaying ? (
+						<div className="video-container">
+							<video src="/beliggenhed/video-vaest.mp4" preload="metadata" loop autoPlay muted id="myVideo"></video>
+						</div>
+						) : (
+						<Image width={332} height={332} src="/beliggenhed/video-poster.png" alt="seashore" />
+						)}					
 
 					<div className="row__content">
 						<div className="row__icons">
