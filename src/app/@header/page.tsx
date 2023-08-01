@@ -47,10 +47,10 @@ export default function Header() {
         });
         }
     }
-    useEffect(() => {        
+    useEffect(() => {
         const accordionItems = document.querySelectorAll('.accordion__item');
-    
-        const toggleItem = (item) => {
+
+        const toggleItem = (item:any) => {
           const accordionContent = item.querySelector('.accordion__content');
           if (item.classList.contains('accordion-open')) {
             accordionContent.removeAttribute('style');
@@ -60,15 +60,15 @@ export default function Header() {
             item.classList.add('accordion-open');
           }
         };
-    
+
         accordionItems.forEach((item) => {
           const accordionHeader = item.querySelector('.accordion__header');
-    
-          accordionHeader.addEventListener('click', () => {
+
+          accordionHeader?.addEventListener('click', () => {
             const openItem = document.querySelector('.accordion-open');
-    
+
             toggleItem(item);
-    
+
             if (openItem && openItem !== item) {
               toggleItem(openItem);
             }
@@ -109,7 +109,7 @@ export default function Header() {
                     <div className="accordion">
                         <div className="accordion__item">
                             <div className="accordion__header">
-                                <div href="#">Mere</div>
+                                <div>Mere</div>
                                 <span><svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
