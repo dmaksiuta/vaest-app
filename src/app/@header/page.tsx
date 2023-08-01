@@ -64,7 +64,7 @@ export default function Header() {
         accordionItems.forEach((item) => {
           const accordionHeader = item.querySelector('.accordion__header');
 
-          accordionHeader.addEventListener('click', () => {
+          accordionHeader?.addEventListener('click', () => {
             const openItem = document.querySelector('.accordion-open');
 
             toggleItem(item);
