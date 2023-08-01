@@ -101,9 +101,12 @@
     display: block;
    
 }
-.gallerySecond__content.fullScreen img {
-    height: 100vh;
-    max-height: 100%;       
+.gallerySecond__content.fullScreen {
+    max-width: 100%;
+    img {
+        height: 100vh;    
+        max-height: 100%;            
+    }
 }
 .gallerySecond__swiper.fullScreen {
     transform: translateY(-75px);
