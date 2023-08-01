@@ -61,6 +61,10 @@ export default function Bygning() {
 		event.stopPropagation();
 		openModal(); 
 	  };
+	const handleLikeClick = (event) => {
+		event.stopPropagation();
+		setCounter(counter + 1); 
+	  };
 
 	return (
 		<div className="bygning-section">
@@ -111,7 +115,7 @@ export default function Bygning() {
 							</div>
 							<div className="picture__content">
 								<div className="picture__icons">
-									<div className="picture__svg" onClick={() => setCounter(counter + 1)}>
+									<div className="picture__svg" onClick={handleLikeClick}>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 									</div>
 									<div className="picture__counter">{counter}</div>
@@ -125,7 +129,7 @@ export default function Bygning() {
 							<Image width={995} height={559} src="/main-bg-2.jpg" alt="restaurant building" />
 							<div className="picture__content">
 								<div className="picture__icons">
-									<div className="picture__svg" onClick={() => setCounter(counter + 1)}>
+									<div className="picture__svg" onClick={handleLikeClick}>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 									</div>
 									<div className="picture__counter">{counter}</div>
@@ -139,7 +143,7 @@ export default function Bygning() {
 							<Image width={995} height={559} src="/main-bg-3.jpg" alt="restaurant building" />
 							<div className="picture__content">
 								<div className="picture__icons">
-									<div className="picture__svg" onClick={() => setCounter(counter + 1)}>
+									<div className="picture__svg" onClick={handleLikeClick}>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none" /><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="8" onClick={() => setCounter(counter + 1)} /></svg>
 									</div>
 									<div className="picture__counter">{counter}</div>
