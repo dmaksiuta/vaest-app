@@ -122,7 +122,7 @@ export default function GallerySecond({ isActive, deactivateGallery }: any) {
               }`}>
 							{/* <Image width={894} height={600} src="/beliggenhed/video-poster.png" alt="seashore" /> */}
 							<div className="video-container">
-								<video src="/beliggenhed/video-vaest.mp4" preload="metadata" autoPlay muted id="myVideo"></video>
+								<video src="/beliggenhed/video-vaest.mp4" preload="metadata" autoPlay muted controls id="myVideo"></video>
 							</div>  
 						</div>
 					</SwiperSlide>
