@@ -38,6 +38,7 @@ export default function Beliggenhed() {
 	  };
 
 
+
 	useEffect(() => {
 		const htmlElement = document.getElementById("html");
 		const bodyElement = document.getElementById("body");

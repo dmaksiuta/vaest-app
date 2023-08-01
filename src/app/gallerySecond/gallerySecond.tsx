@@ -7,6 +7,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import Image from 'next/image'
 
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 
 export default function GallerySecond({ isActive, deactivateGallery }: any) {
 	const [modalOpen, setModalOpen] = useState(false);
@@ -19,6 +23,10 @@ export default function GallerySecond({ isActive, deactivateGallery }: any) {
 	const closeModal = () => {
 		setModalOpen(false);
 	};
+	
+	useEffect(() => {
+		console.log(isActive, fullScreen)
+	}, [modalOpen]);
 
 	useEffect(() => {
 		const htmlElement = document.getElementById("html");
