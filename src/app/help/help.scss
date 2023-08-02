@@ -10,13 +10,17 @@
         margin-top: 32rem;
         margin-bottom: 110rem;
         @include tablet {            
-            margin-bottom: 22rem;
+            padding-bottom: 22rem;
         } 
         
     }
     &__footer {
         padding: 120rem 0;
         background: $footer-grey;
+        @include tablet {
+            padding: 40rem 15rem 0;
+            align-items: flex-start;
+        }
     }
     &__btn {
         margin-top: 55rem;
@@ -46,6 +50,9 @@
             padding: 60rem 13.5rem;
             @include tablet {                
                 height: auto;
+                text-align: left;
+                align-items: flex-start;
+                padding: 30rem 15rem;
             } 
             a {
                 @include text ($ff, 15rem, 30rem, 400, $white);
@@ -80,6 +87,10 @@
         &__slogan {
             margin: 47rem 0 34rem;
             max-width: 274rem; 
+            @include tablet {                
+                margin: 25rem 0;
+                max-width: 100%; 
+            } 
                      
         }
     }
