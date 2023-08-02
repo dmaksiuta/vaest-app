@@ -22,6 +22,13 @@
         flex-direction: column;
         gap: 28rem;
     }
+    span a{
+        text-decoration: underline;
+        @include text ($ff, 15rem, 30rem, 400, $primary);
+        @include mobile {
+            font-size: 14rem;        
+        } 
+    }
 }
 
 
