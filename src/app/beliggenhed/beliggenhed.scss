@@ -6,15 +6,14 @@
         max-width: 780rem;
         margin-inline: auto;
         @include tablet {
-            padding: 22rem 15rem 120rem;
-        }
-        @include mobile {
-            max-width: 310rem;
-            margin: 0;
-        }
+            padding: 22rem 15rem;
+        }        
     }
     &__desc {
         margin-bottom: 28rem;
+        @include tablet {
+            padding-right: 22rem;
+        }         
     }
     &__link {
         text-decoration: underline;
