@@ -67,7 +67,8 @@ h3 {
     font-family: var('--font-avenir'); 
 }
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     @include text ($ff, 15rem, 28.6rem, 400, $primary); 
     padding: 10rem 20rem;
     border: 1rem solid $primary;
