@@ -121,8 +121,8 @@ export default function GallerySecond({ isActive, deactivateGallery }: any) {
                 isActive && fullScreen ? "fullScreen" : ""
               }`}>							
 							<div className="video-container">
-								<video width={894} height={600} src="/beliggenhed/video-vaest.mp4" preload="metadata" autoPlay muted controls id="myVideo"></video>
-								{/* <video width={894} height={600} src="https://photos.app.goo.gl/i5Mt7qZxK2cFy86K7" preload="metadata" autoPlay muted controls id="myVideo"></video> */}
+								{/* <video width={894} height={600} src="/beliggenhed/video-vaest.mp4" preload="metadata" autoPlay muted controls id="myVideo"></video> */}
+								<video width={894} height={600} src="https://video-downloads.googleusercontent.com/AMIVHOMuz6BaI3hnBd2Lwa2OY2AEJ9YOkwhdPgzQ-V8wejB2liLAe8R834BVyZ8z1iFQHaCNGRkU-CCXpKdFsxlPGZjpitAH_q1cPIUVRKKpgYrZklcUTew0tb3Zq6hA4vicAWG-PMPvuAqZHfJHLOJ7fSmvftAV_0grL_Db3mb-kQe47XD63SuaRFG5Oa7VjO7FZaOUHfSNcQSOlJtsNjWxwqcXoXd_e1z-c2hLD3KufKNC_dqB9e6x1L0kZErF3-nnmYigIrjaRPwnayZeRHD7-Ho-75C3FJXDRFMqKZmitvJQl2nh7_yeQwGXHaSaVC89Aamlvrb8M0U6Piy7jmJv_kn34Px6CrVnFC1-8qIpy4-nLANwQaznEYAFJzI_xeqqrbKjM5paMJIH0TREHPDYn73ib5Pr0ZMNoaDR26JYwdil2poOkcdi5kkcRGdZWof_FvRo6ZdlJ4fjc6QBagP7sbMN8W8-3Hhgk13DuCsgWj1OmSM3QxdzxDOGGq-O0-tknfbHQeJBmS6nXw6Nhy92FvcTbOGvMHy48Fss5TzDCzLQRUpnFumToPyo52ivjZ8yg-nwPLMJC-T95_73NSQijjGYlhhsHf4H8TnM667Wkkneh5ZZ4AQAP2zaOGHKs4CeOL0ycWRE9OKrXKUWVOHgMxkU-U3cBiF9tdj_95yPdRW2c5p_B6uH3u9wMsSUAQ85T7inJr9Cc559caRO5NmCtcFK0E9b7044YQ0nlhX9MXQOA_GNPJtVXI4OuUGRTKC_KJ8kkzfwFmxEM0QUK6tVKChNrJH_odLk6JRjL3vSCUvJPdrmM3jUtSwVvcgFKt9ZN_FcQBDes64E06sQPN_1ylk7pp-LlX3wsNLOHn1I63lbf90KzHQaCwpMWYBVCyCkNNkrS4J5vsQ5YMJWOD0IvQ87O0boT2dWrv9UB8XuOMvAJ4oHunw0EF1-kehjsBGYPtl6OSm4B9y6A1Wi4Wh81o-dsxgkfnZxNNW6Dt6FN_lUUcQ2iHKcnrcSflXM7lmuMpIC6q_dmNsGYpEMMY6Tvmeo8Lsd-Tn4HKhlIYQ--keXn06rwi3UoJQQAAFGldFayGD9wzaK?authuser=0" preload="metadata" autoPlay muted controls id="myVideo"></video>
 							</div>  
 						</div>
 					</SwiperSlide>
