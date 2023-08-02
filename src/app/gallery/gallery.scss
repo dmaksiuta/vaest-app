@@ -95,7 +95,19 @@
 
 }
 .gallery.active {
-    display: block;   
+    display: block; 
+    .gallery__picture {
+
+    }
+    @include mobile {
+        img {        
+            object-fit: contain;
+            position: relative;
+            top: 0;
+            height: auto;
+        }  
+    }
+    
 }
 .gallery__picture.fullScreen {
     max-width: 100%;
