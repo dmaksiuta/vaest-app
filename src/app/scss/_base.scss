@@ -68,23 +68,12 @@ h3 {
 }
 .btn {
     position: relative;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    height: auto;    
-    align-items: center; 
-    -webkit-align-items: center;   
+    display: inline-block;
     @include text ($ff, 15rem, 29rem, 400, $primary);    
     padding: 10px 20px;
     border: 1rem solid $primary;
     transition: $transition;
-    margin-top: 51rem;
-    -webkit-appearance: none;
-    -moz-appearance:    none;
-    appearance:         none; 
-    a {        
-        align-self: center;
-    }   
+    margin-top: 51rem;      
     &:hover {
        color: $white;
        background: $primary;
