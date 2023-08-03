@@ -91,7 +91,7 @@
     cursor: pointer;
     transition: $transition;
     &::placeholder {
-        @include text ($ff, 15rem, 30rem, 400, $primary); 
+        @include text ($ff, 15rem, 30rem, 400, red); 
     }
     &:hover, &:focus {
         border: 1px solid $primary;
