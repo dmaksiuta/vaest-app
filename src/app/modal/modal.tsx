@@ -7,20 +7,20 @@ import '../scss/utils/_modal.scss';
 
 export default function Modal({ closeModal, modalOpen }: any) {
 	// Function to copy text
-	// function myFunction() {
-	// 	// Get the text field
-	// 	var copyText = document.getElementById("myInput");
+	function myFunction() {
+		// Get the text field
+		var copyText = document.getElementById("myInput");
 
-	// 	// Select the text field
-	// 	if (copyText) {
-	// 		copyText.select();
-	// 		copyText.setSelectionRange(0, 99999); // For mobile devices
+		// Select the text field
+		if (copyText) {
+			// copyText.select();
+			// copyText.setSelectionRange(0, 99999); // For mobile devices
 
-	// 		// Copy the text inside the text field
-	// 		navigator.clipboard.writeText(copyText.value);
-	// 	}
+			// Copy the text inside the text field
+			// navigator.clipboard.writeText(copyText.value);
+		}
 
-	// }
+	}
 
 	return (
 		<div className={`pop-up ${modalOpen ? 'active' : ''}`} id="popUp">
