@@ -93,7 +93,7 @@
         @include text ($ff, 15rem, 30rem, 400, rgb(217, 28, 60));
     }
     &::-webkit-input-placeholder {
-        @include text ($ff, 15rem, 30rem, 400, green); 
+        @include text ($ff, 15rem, 30rem, 400, rgb(217, 28, 60)); 
     }
     &:hover, &:focus {
         border: 1px solid $primary;
