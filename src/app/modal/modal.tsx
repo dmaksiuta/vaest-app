@@ -13,11 +13,11 @@ export default function Modal({ closeModal, modalOpen }: any) {
 
 		// Select the text field
 		if (copyText) {
-			// copyText.select();
-			// copyText.setSelectionRange(0, 99999); // For mobile devices
+			copyText.select();
+			copyText.setSelectionRange(0, 99999); // For mobile devices
 
 			// Copy the text inside the text field
-			// navigator.clipboard.writeText(copyText.value);
+			navigator.clipboard.writeText(copyText.value);
 		}
 
 	}

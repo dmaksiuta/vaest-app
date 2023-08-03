@@ -67,7 +67,11 @@ h3 {
     font-family: var('--font-avenir'); 
 }
 .btn {
+    position: relative;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    height: auto;    
     align-items: center;    
     @include text ($ff, 15rem, 29rem, 400, $primary);    
     padding: 10rem 20rem;
@@ -76,7 +80,10 @@ h3 {
     margin-top: 51rem;
     -webkit-appearance: none;
     -moz-appearance:    none;
-    appearance:         none;
+    appearance:         none; 
+    a {        
+        align-self: center;
+    }   
     &:hover {
        color: $white;
        background: $primary;

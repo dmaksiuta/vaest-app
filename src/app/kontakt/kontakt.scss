@@ -25,6 +25,7 @@
     }
     &__title {
         margin-bottom: 29rem;
+        color: greenyellow;
     }
     &__desc {
         margin-bottom: 28rem;        
@@ -76,25 +77,27 @@
     }
     &__input {
         line-height: 44px;
-        padding: 3rem 3rem 3rem 6rem;
+        padding: 3rem 3rem 3rem 6rem;        
         @include mobile {
             line-height: 45rem; 
         }  
+    }
+    input {
+        -webkit-user-select:text;
     }
 }
 .field__input, .field__textarea { 
     border: 0; 
     border-radius: 0;
     border-bottom: 1px solid $primary;
+    -webkit-user-select:text;
+    &::-webkit-input-placeholder {
+        @include text ($ff, 15rem, 30rem, 400, $primary); 
+    }
+    @include text ($ff, 15rem, 30rem, 400, $primary);    
     outline: 0;
     cursor: pointer;
-    transition: $transition;
-    &::placeholder {
-        @include text ($ff, 15rem, 30rem, 400, rgb(217, 28, 60));
-    }
-    &::-webkit-input-placeholder {
-        @include text ($ff, 15rem, 30rem, 400, rgb(217, 28, 60)); 
-    }
+    transition: $transition;    
     &:hover, &:focus {
         border: 1px solid $primary;
         
