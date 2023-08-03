@@ -65,7 +65,7 @@
     flex-direction: column;
     flex-grow: 1;    
     gap: 5rem;
-    transition: $transition;
+    transition: $transition;    
     &:not(:last-child) {
         margin-bottom: 15px;
     }
@@ -74,19 +74,13 @@
        font-size: 15rem;              
     } 
     &__title {
-        @include mobile {
+        @include tablet {
             text-align: left;              
         } 
     }
     &__input {
         line-height: 44px;
         padding: 3rem 3rem 3rem 6rem;
-        &::placeholder {
-            overflow: visible;
-         }
-         &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            color: pink;
-          }
         @include mobile {
             line-height: 45rem; 
         }  
@@ -96,8 +90,9 @@
     border: 1px solid transparent; 
     border-radius: 0;
     border-bottom: 1px solid $primary;
+    text-overflow: ellipsis;
     &::-webkit-input-placeholder {
-        @include text ($ff, 15rem, 30rem, 400, $primary); 
+        @include text ($ff, 15rem, 30rem, 400, $primary);        
     }
     @include text ($ff, 15rem, 30rem, 400, $primary);    
     outline: 0;

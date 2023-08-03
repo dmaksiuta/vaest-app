@@ -6,19 +6,32 @@ import Image from 'next/image'
 import '../scss/utils/_modal.scss';
 
 export default function Modal({ closeModal, modalOpen }: any) {
+
+	const [isCopied, setIsCopied] = useState(false);
 	// Function to copy text
 	function myFunction() {
 		// Get the text field
-		var copyText = document.getElementById("myInput");
+		var copyText = document.getElementById("myInput") as HTMLInputElement;
+
+		// Perform copy operation
+		if (copyText) {
+			copyText.select();
+			copyText.setSelectionRange(0, 99999); // For mobile devices
+	
+		// Copy the text inside the text field
+		if (document.execCommand("copy")) {
+			setIsCopied(true);
+		  }
+		}
 
 		// Select the text field
-		if (copyText) {
+		// if (copyText) {
 			// copyText.select();
 			// copyText.setSelectionRange(0, 99999); // For mobile devices
 
 			// Copy the text inside the text field
 			// navigator.clipboard.writeText(copyText.value);
-		}
+		// }
 
 	}
 

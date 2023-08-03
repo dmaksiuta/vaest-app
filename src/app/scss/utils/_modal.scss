@@ -50,15 +50,17 @@
         display: flex;
         max-width: 300rem;
         max-height: 40rem;
+        border-radius: 0px;
         input {
             padding: 2rem 8rem;
             background: $input;            
             @include text ($ff, 14rem, 28.6rem, 400, $primary);
-            border: 1rem solid $black;
+            border: 1rem solid $black; 
+            border-radius: 0px;           
             width: 260rem;            
             user-select: none; 
             &:focus {
-                outline: none;                
+                outline: none;                              
             }
             @include tablet-small {
                 width: 200rem;                
