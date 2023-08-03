@@ -35,6 +35,9 @@
 .menu-section {
     padding: 55rem 0 120rem;
     text-align: center;
+    @include tablet {
+        padding-bottom: 0;
+    }
     &__title {        
         line-height: 60rem;
         padding-top: 12rem;

@@ -83,7 +83,8 @@
         }  
     }
     input {
-        -webkit-user-select:text;
+        -webkit-user-select: initial;
+        user-select: initial;
     }
 }
 .field__input, .field__textarea { 

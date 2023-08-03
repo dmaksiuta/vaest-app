@@ -72,9 +72,10 @@ h3 {
     display: -ms-inline-flexbox;
     display: inline-flex;
     height: auto;    
-    align-items: center;    
+    align-items: center; 
+    -webkit-align-items: center;   
     @include text ($ff, 15rem, 29rem, 400, $primary);    
-    padding: 10rem 20rem;
+    padding: 10px 20px;
     border: 1rem solid $primary;
     transition: $transition;
     margin-top: 51rem;
@@ -101,10 +102,10 @@ h3 {
         margin: 13rem 0;             
     }
 }
-input, input:before, input:after {
-    -webkit-user-select: initial;
-    -khtml-user-select: initial;
-    -moz-user-select: initial;
-    -ms-user-select: initial;
-    user-select: initial;
-   }
+// input, input:before, input:after {
+//     -webkit-user-select: initial;
+//     -khtml-user-select: initial;
+//     -moz-user-select: initial;
+//     -ms-user-select: initial;
+//     user-select: initial;
+//    }

@@ -1,7 +1,6 @@
 .header__accordion {
 	transform: translateY(-100%);
-	position: fixed;
-	z-index: -10;
+	position: fixed;	
 	@include tablet {
         position: static;
 		transform: translateY(0);
