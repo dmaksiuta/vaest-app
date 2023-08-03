@@ -67,8 +67,9 @@
     flex-grow: 1;
     gap: 5rem;
     transition: $transition;
+    @include text ($ff, 15rem, 30rem, 400, $primary);
     @include mobile {
-        @include text ($ff, 16rem, 30rem, 400, $primary);              
+       font-size: 15rem;              
     } 
     &__title {
         @include mobile {
@@ -90,6 +91,9 @@
     outline: 0;
     cursor: pointer;
     transition: $transition;
+    &::placeholder {
+        @include text ($ff, 15rem, 30rem, 400, green);
+    }
     &::-webkit-input-placeholder {
         @include text ($ff, 15rem, 30rem, 400, green); 
     }
