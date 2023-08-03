@@ -69,11 +69,15 @@ h3 {
 .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     @include text ($ff, 15rem, 28.6rem, 400, $primary); 
     padding: 10rem 20rem;
     border: 1rem solid $primary;
     transition: $transition;
     margin-top: 51rem;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
     &:hover {
        color: $white;
        background: $primary;
