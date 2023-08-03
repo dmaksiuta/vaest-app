@@ -90,8 +90,8 @@
     outline: 0;
     cursor: pointer;
     transition: $transition;
-    &::placeholder {
-        @include text ($ff, 15rem, 30rem, 400, red); 
+    &::-webkit-input-placeholder {
+        @include text ($ff, 15rem, 30rem, 400, green); 
     }
     &:hover, &:focus {
         border: 1px solid $primary;
