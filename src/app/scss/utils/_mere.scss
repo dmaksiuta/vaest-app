@@ -2,12 +2,12 @@
     position: relative;
     transition: $transition;
     @include tablet {
-        display: none;
+        display: none;       
     }    
 }
 
 .mere__ul {
-    position: absolute;
+    position: absolute;    
     background: $white;
     right: 0;
     top: 35rem;

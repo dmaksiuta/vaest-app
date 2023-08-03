@@ -25,7 +25,7 @@
     }
     &__title {
         margin-bottom: 29rem;
-        color: greenyellow;
+        color: red;
     }
     &__desc {
         margin-bottom: 28rem;        
@@ -39,6 +39,7 @@
     &__row {
         display: flex;
         gap: 10rem;
+        margin-bottom: 15px;
         @include tablet {
             display: block;     
          } 
@@ -63,9 +64,12 @@
 .field {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 1;    
     gap: 5rem;
     transition: $transition;
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
     @include text ($ff, 15rem, 30rem, 400, $primary);
     @include mobile {
        font-size: 15rem;              
@@ -77,21 +81,16 @@
     }
     &__input {
         line-height: 44px;
-        padding: 3rem 3rem 3rem 6rem;        
+        padding: 3rem 3rem 3rem 6rem;
         @include mobile {
             line-height: 45rem; 
         }  
     }
-    input {
-        -webkit-user-select: initial;
-        user-select: initial;
-    }
 }
 .field__input, .field__textarea { 
-    border: 0; 
+    border: 1px solid transparent; 
     border-radius: 0;
     border-bottom: 1px solid $primary;
-    -webkit-user-select:text;
     &::-webkit-input-placeholder {
         @include text ($ff, 15rem, 30rem, 400, $primary); 
     }

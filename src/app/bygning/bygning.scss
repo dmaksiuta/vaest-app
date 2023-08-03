@@ -1,7 +1,7 @@
 @import '../scss/style.scss';
 
 .bygning-section {
-    padding: 55rem 80rem 120rem;
+    padding: 55rem 80rem 120rem;   
     @include tablet {        
         padding: 0 0 45rem 0;
     }

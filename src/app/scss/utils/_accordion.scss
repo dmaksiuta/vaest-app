@@ -1,18 +1,16 @@
 .header__accordion {
 	transform: translateY(-100%);
-	position: fixed;	
+	position: fixed;		
 	@include tablet {
         position: static;
 		transform: translateY(0);
-        
     }
 }
 .accordion {
     display: none;
     text-align: center;	
     @include tablet {
-        display: block;
-        
+        display: block;	
     }
     .material-icons {
         transition: $transition;        
