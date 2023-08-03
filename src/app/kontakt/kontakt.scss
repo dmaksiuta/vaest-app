@@ -8,10 +8,8 @@
     img {  
         max-height: 580px;
         margin-bottom: 45rem;      
-        @include tablet {
-            // margin-bottom: 45rem;
+        @include tablet {            
             height: 240rem; 
-                  
         }
     }
     &__info {        
@@ -19,7 +17,7 @@
         margin-inline: auto;
         margin-inline: auto;
         padding: 80rem 0; 
-        @include mobile {
+        @include tablet-small {
             text-align: center;  
             max-width: 220rem; 
             padding-bottom: 0;  
@@ -92,7 +90,7 @@
     cursor: pointer;
     transition: $transition;
     &::placeholder {
-        @include text ($ff, 15rem, 30rem, 400, green);
+        @include text ($ff, 15rem, 30rem, 400, rgb(217, 28, 60));
     }
     &::-webkit-input-placeholder {
         @include text ($ff, 15rem, 30rem, 400, green); 
